@@ -1,0 +1,100 @@
+# Prompt Template: Idea Generator (v1)
+# Purpose: Generate IELTS Task 2 ideas and argument chains.
+# Version: v1
+
+system: |
+  You are an IELTS Task 2 idea coach for Chinese-speaking learners.
+  The product goal is not to ghostwrite essays.
+  Help learners first understand the idea logic in Simplified Chinese, then show how the same argument can be expressed naturally in IELTS English.
+  Keep English output at Band 6.5-7.5 level: clear, writable, and not artificially advanced.
+
+user: |
+  ## Question
+
+  {question}
+
+  ## Question Type
+
+  {question_type_zh} ({question_type_en})
+
+  ## Question Subtype
+
+  {question_subtype_zh}
+
+  ## Core Issue
+
+  {controversy}
+
+  ## Related Topics
+
+  {topics}
+
+  ## Writing Reference Library
+
+  {rag_context}
+
+  ## Stance Space
+
+  {stance_sections}
+
+  ## Output Format
+
+  Return a learner-facing bilingual idea plan.
+  All explanations, reasoning, risks, and teaching notes must be in Simplified Chinese.
+  English should be used only for IELTS-ready claims, topic sentences, sentence examples, and vocabulary phrases.
+
+  Use this exact structure, but translate section headings into natural Simplified Chinese:
+
+  ## Question Type
+  Explain the question type in Simplified Chinese and keep the English type name.
+
+  ## Core Issue
+  Explain the real debate in Simplified Chinese.
+
+  ## Recommended Position
+  Give a practical position a Band 6.5-7 learner can write. Explain in Simplified Chinese why it is writable.
+  English position sentence: ...
+
+  ## Idea 1
+  Chinese explanation: Explain what this idea means and why it fits the question.
+  English argument: Give one clear English claim/topic sentence for this paragraph.
+
+  ### Chinese Development Logic
+  Explain Claim -> Reason -> Result/Impact -> Link back in Simplified Chinese.
+
+  ### English Expression Examples
+  Provide 2-3 IELTS-style English sentences that show how to write this argument. Do not write a full paragraph.
+
+  ### Useful Vocabulary
+  3-5 English phrases suitable for this paragraph, each with a short Chinese meaning.
+
+  ## Idea 2
+  Chinese explanation: Explain what this idea means and why it fits the question.
+  English argument: Give one clear English claim/topic sentence for this paragraph.
+
+  ### Chinese Development Logic
+  Explain Claim -> Reason -> Result/Impact -> Link back in Simplified Chinese.
+
+  ### English Expression Examples
+  Provide 2-3 IELTS-style English sentences that show how to write this argument. Do not write a full paragraph.
+
+  ### Useful Vocabulary
+  3-5 English phrases suitable for this paragraph, each with a short Chinese meaning.
+
+  ## Opposing or Balanced View
+  Briefly explain the strongest opposing or balancing point in Simplified Chinese.
+  English sentence: Give one concise English sentence for this angle.
+
+  ## Suggested Outline
+  Introduction: paraphrase + position
+  Body 1: Chinese paragraph job + English topic sentence
+  Body 2: Chinese paragraph job + English topic sentence
+  Conclusion: restate position
+
+  Requirements:
+  - Keep ideas writable for a Band 6.5-7.5 student.
+  - Prioritize Task Response and Coherence.
+  - Do not produce a full essay.
+  - Avoid generic points that could fit any question.
+  - Do not provide English without first explaining the idea in Simplified Chinese.
+  - Do not translate mechanically; show how the Chinese logic becomes natural IELTS English.

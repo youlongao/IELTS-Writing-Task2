@@ -1,0 +1,6 @@
+[server]
+# Suppress noisy third-party package import warnings
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

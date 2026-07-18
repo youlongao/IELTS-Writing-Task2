@@ -1,0 +1,347 @@
+{
+  "structures": [
+    {
+      "type": "opinion",
+      "name_en": "Opinion Essay (Agree/Disagree)",
+      "name_zh": "瑙傜偣鍨嬶紙鍚屾剰/涓嶅悓鎰忥級",
+      "description": "To what extent do you agree or disagree?",
+      "typical_prompts": [
+        "To what extent do you agree or disagree with this statement?",
+        "Do you agree or disagree?",
+        "What is your opinion on this?"
+      ],
+      "structure": {
+        "introduction": {
+          "purpose": "Paraphrase the question statement and clearly state your position (agree, disagree, or a balanced view). Avoid copying the question word for word 鈥?use synonyms and restructured sentences.",
+          "template": "It is often argued that [paraphrase of the statement]. While there are valid points on both sides, I firmly believe that [your clear position] because [brief hint at reasons].",
+          "word_count": "40-50 words",
+          "key_elements": [
+            "Paraphrase the given statement using synonyms",
+            "State your position unambiguously",
+            "Briefly preview your main reasons (without going into detail)",
+            "Use hedging language if taking a balanced view (e.g., 'to a large extent', 'largely')"
+          ]
+        },
+        "body_paragraph_1": {
+          "purpose": "Present your first main reason supporting your position. This paragraph should have a single clear focus 鈥?do not mix multiple ideas.",
+          "structure": "Topic sentence (main idea) 鈫?Explanation (2-3 sentences explaining the reasoning) 鈫?Specific example (real-world or hypothetical) 鈫?Link back (explain how this supports your overall argument)",
+          "template": "One compelling reason for my stance is that [main idea]. This means that [explain the logic or consequence]. For instance, [specific example with details]. Therefore, [link back to the main argument].",
+          "word_count": "80-100 words"
+        },
+        "body_paragraph_2": {
+          "purpose": "Present your second main reason. This should be distinct from the first paragraph 鈥?typically covering a different dimension such as economic vs. social, or short-term vs. long-term.",
+          "structure": "Topic sentence (main idea) 鈫?Explanation (unpack the reasoning) 鈫?Specific example (add credibility) 鈫?Link back (reinforce your position)",
+          "template": "Furthermore, [second main idea]. In other words, [deeper explanation]. A case in point is [specific example]. Consequently, [link back to overall argument].",
+          "word_count": "80-100 words"
+        },
+        "optional_counter_argument": {
+          "purpose": "If you hold a strong one-sided view, you may include a brief counter-argument paragraph to demonstrate balanced thinking. This shows the examiner you have considered alternative perspectives.",
+          "structure": "Acknowledge the opposing view 鈫?Briefly explain why some hold it 鈫?Refute or weaken it 鈫?Return to your position",
+          "template": "Admittedly, some people argue that [opposing view] because [their reasoning]. However, this argument overlooks the fact that [your rebuttal]. Thus, [return to your position].",
+          "word_count": "50-70 words",
+          "note": "This paragraph is optional. Only include it if you are confident in managing the argument flow. If included, it may replace body_paragraph_2 or be placed before the conclusion."
+        },
+        "conclusion": {
+          "purpose": "Restate your position and briefly summarize your main arguments. Do not introduce new ideas. The conclusion should leave the reader with a clear sense of your final stance.",
+          "template": "In conclusion, while there are arguments to the contrary, I maintain that [restate position] because [summarize main reasons in one sentence]. Only by [broader implication or recommendation] can we [positive future outcome].",
+          "word_count": "40-50 words",
+          "key_elements": [
+            "Restate your position using different wording from the introduction",
+            "Summarize your key points (1-2 sentences maximum)",
+            "Do NOT introduce new arguments or examples",
+            "Optionally end with a forward-looking statement or recommendation"
+          ]
+        }
+      },
+      "band7_tips": [
+        "Maintain a clear and consistent position throughout the essay 鈥?do not contradict yourself",
+        "Each body paragraph must have one clear main idea stated in its topic sentence",
+        "Use hedging language appropriately (e.g., 'to a large extent', 'in many cases') to show nuance",
+        "Support each argument with a specific example 鈥?avoid vague generalizations",
+        "Use a range of cohesive devices (not just 'firstly', 'secondly', 'thirdly')",
+        "Vary your sentence structures 鈥?mix simple, compound, and complex sentences",
+        "Demonstrate a wide range of vocabulary with natural collocations"
+      ],
+      "common_mistakes": [
+        "Failing to state a clear position in the introduction",
+        "Presenting both sides equally without a clear personal stance",
+        "Using memorized phrases that do not fit the specific question",
+        "Writing body paragraphs that lack specific examples",
+        "Introducing a new argument in the conclusion"
+      ]
+    },
+    {
+      "type": "discussion",
+      "name_en": "Discussion Essay (Discuss Both Views + Your Opinion)",
+      "name_zh": "璁ㄨ鍨嬶紙璁ㄨ鍙屾柟瑙傜偣骞剁粰鍑烘剰瑙侊級",
+      "description": "Discuss both views and give your own opinion.",
+      "typical_prompts": [
+        "Discuss both these views and give your own opinion.",
+        "Some people think... Others believe... Discuss both views and give your opinion.",
+        "Discuss both sides of this argument and then give your own opinion."
+      ],
+      "structure": {
+        "introduction": {
+          "purpose": "Paraphrase both sides of the argument. Briefly state that both views have merit, and indicate that you will discuss both before giving your own opinion. You do not need to reveal your opinion fully yet, but you may hint at it.",
+          "template": "There is an ongoing debate about [paraphrase the topic]. While some people contend that [view A], others argue that [view B]. This essay will examine both perspectives before presenting my own view that [hint at your position].",
+          "word_count": "45-55 words",
+          "key_elements": [
+            "Introduce the general topic (one sentence)",
+            "Paraphrase both views fairly and accurately",
+            "State that you will discuss both sides",
+            "Briefly hint at your own opinion (or state it outright)"
+          ]
+        },
+        "body_paragraph_1": {
+          "purpose": "Discuss the first view in detail. This is NOT your opinion 鈥?you are presenting and explaining what proponents of this view believe, and why. Be fair and objective.",
+          "structure": "Topic sentence stating the first view 鈫?Explanation of why people hold this view 鈫?Supporting example 鈫?Brief evaluation (optional)",
+          "template": "On the one hand, those who advocate [view A] argue that [main reason]. From their perspective, [deeper explanation of the reasoning]. For example, [specific evidence or scenario]. This viewpoint is understandable given that [brief context].",
+          "word_count": "80-100 words",
+          "important_note": "Present this view objectively. Even if you disagree with it, show you understand the reasoning behind it."
+        },
+        "body_paragraph_2": {
+          "purpose": "Discuss the second view in detail. Again, remain objective and present the strongest arguments for this perspective. If you agree with this view, you can start to signal that, but save your full opinion for the next paragraph or conclusion.",
+          "structure": "Topic sentence stating the second view 鈫?Explanation of the counter-argument 鈫?Supporting example 鈫?Transition to your opinion",
+          "template": "On the other hand, proponents of [view B] maintain that [main reason]. They point out that [deeper reasoning with evidence]. A telling example is [specific instance]. This perspective holds considerable weight, particularly when considering [context].",
+          "word_count": "80-100 words"
+        },
+        "body_paragraph_3_or_opinion_integration": {
+          "purpose": "State your own opinion clearly, with reasoning. You can either dedicate a separate short paragraph to this, or integrate your opinion throughout the body paragraphs. The separate paragraph approach is often clearer.",
+          "structure": "State your opinion 鈫?Justify with reasoning 鈫?Support with an example if possible 鈫?Show how your view relates to the two sides discussed",
+          "template": "In my opinion, while [view A] has some merit, [view B] is more convincing because [your reasoning]. This is particularly true in light of [supporting evidence or context]. Therefore, I believe that [restate your position clearly].",
+          "word_count": "60-80 words",
+          "note": "If integrating, signal your opinion in each body paragraph with phrases like 'I find this argument compelling' or 'However, this view overlooks...'"
+        },
+        "conclusion": {
+          "purpose": "Summarize both views briefly, restate your own opinion, and provide a balanced closing thought.",
+          "template": "In conclusion, although there are valid arguments on both sides of this issue, I believe that [your position] because [key reason]. Both perspectives highlight the need for [balanced forward-looking statement or recommendation].",
+          "word_count": "40-50 words",
+          "key_elements": [
+            "Briefly acknowledge both views one more time",
+            "Clearly restate your own opinion",
+            "Summarize your main justification",
+            "End with a balanced, forward-looking thought"
+          ]
+        }
+      },
+      "band7_tips": [
+        "Present both views fairly before giving your own opinion 鈥?do not dismiss one side prematurely",
+        "Your own opinion must be clearly stated 鈥?students often lose marks by being too vague",
+        "Use clear topic sentences to distinguish between presenting a view and giving your opinion",
+        "Use discourse markers like 'on the one hand' and 'on the other hand' appropriately",
+        "Make sure each view is explored in roughly equal depth",
+        "Demonstrate the ability to see merit in both sides while still having your own position",
+        "Use hedging when presenting others' views (e.g., 'some people argue', 'it is often claimed')"
+      ],
+      "common_mistakes": [
+        "Forgetting to give your own opinion 鈥?this is a critical requirement",
+        "Only presenting one side in detail and briefly mentioning the other",
+        "Being too neutral 鈥?the prompt asks for your opinion, not just a summary of the debate",
+        "Confusing the discussion essay with the opinion essay structure",
+        "Presenting your opinion in the first body paragraph (confusing the reader about which side you are presenting)"
+      ]
+    },
+    {
+      "type": "problem_solution",
+      "name_en": "Problem-Solution Essay",
+      "name_zh": "闂瑙ｅ喅鍨?",
+      "description": "What problems does this cause? What solutions can you suggest?",
+      "typical_prompts": [
+        "What problems does this cause, and what solutions can you suggest?",
+        "What are the problems associated with this, and how can they be solved?",
+        "What difficulties does this create, and what measures can be taken?"
+      ],
+      "structure": {
+        "introduction": {
+          "purpose": "Introduce the topic by paraphrasing the statement. Outline that you will discuss the problems/challenges this issue causes and then propose viable solutions. No need for a strong opinion 鈥?this is an analytical task.",
+          "template": "In recent years, [paraphrase the issue/topic] has become a growing concern. This essay will examine the primary problems arising from this trend and propose practical measures to address them.",
+          "word_count": "35-45 words",
+          "key_elements": [
+            "Paraphrase the scenario or statement",
+            "Indicate the severity or importance of the issue",
+            "State that you will discuss problems and solutions",
+            "Keep it concise 鈥?do not start listing problems yet"
+          ]
+        },
+        "body_paragraph_1": {
+          "purpose": "Identify and explain ONE or TWO closely related problems caused by the issue. Each problem should be clearly explained with its causes and consequences. Support with examples.",
+          "structure": "Topic sentence (identify the main problem) 鈫?Explanation (why it occurs and its effects) 鈫?Example (real-world illustration) 鈫?Link to the need for solutions (transition)",
+          "template": "One of the most significant problems stemming from [the issue] is [problem 1]. This occurs because [reason or mechanism]. As a result, [consequence or impact]. For instance, [specific example showing real impact]. Unless addressed, this problem is likely to [worsening scenario].",
+          "word_count": "90-110 words",
+          "note": "You may discuss two problems in this paragraph if they are closely related. If they are distinct, consider splitting them into two shorter body paragraphs (problem 1 + problem 2), followed by a solutions paragraph."
+        },
+        "body_paragraph_2": {
+          "purpose": "Present ONE or TWO specific, practical solutions to the problems identified. Each solution should be feasible and explained clearly. Link solutions back to the problems 鈥?show HOW each solution addresses a problem from the previous paragraph.",
+          "structure": "Topic sentence (identify the solution) 鈫?Explanation (how it works and who implements it) 鈫?Example (where it has worked or could work) 鈫?Expected outcome (how it solves the problem)",
+          "template": "To tackle the aforementioned problems, several measures can be implemented. Firstly, [solution 1] could be introduced, whereby [mechanism of implementation]. This approach has proven effective in [real-world example], where [positive result]. Secondly, [solution 2] should be considered, as it addresses [specific problem] by [how it works]. If implemented effectively, these measures would [expected positive outcome].",
+          "word_count": "90-110 words",
+          "alternative_structure": "If you discussed two problems in two separate body paragraphs, then dedicate one paragraph per solution, matching each solution to its corresponding problem.",
+          "key_principle": "Solutions must be specific and actionable 鈥?avoid vague suggestions like 'the government should do something'."
+        },
+        "conclusion": {
+          "purpose": "Summarize the problem and solution(s) concisely. Emphasize the urgency of action and end with a forward-looking statement about potential positive outcomes.",
+          "template": "In conclusion, [restate the issue] poses serious challenges, primarily in the form of [summarize key problem(s) briefly]. However, by implementing [summarize key solution(s)], these challenges can be effectively mitigated. Concerted effort from all stakeholders is essential to ensure [positive future outcome].",
+          "word_count": "40-50 words",
+          "key_elements": [
+            "Recap the problem(s) in one sentence",
+            "Recap the solution(s) in one sentence",
+            "Emphasize collective responsibility",
+            "End with a hopeful/positive note about the future"
+          ]
+        }
+      },
+      "band7_tips": [
+        "Each problem must be clearly linked to a specific solution 鈥?do not discuss unrelated problems and solutions",
+        "Solutions must be practical and specific 鈥?mention who should act (government, individuals, companies)",
+        "Use cause-and-effect language to explain how problems arise and how solutions work",
+        "Support problems with real-world examples or data where possible",
+        "Consider feasibility 鈥?suggest solutions that can realistically be implemented",
+        "Balance the depth of problem analysis and solution detail 鈥?neither should dominate the essay",
+        "Use modal verbs effectively for solutions: 'could', 'should', 'ought to', 'might'"
+      ],
+      "common_mistakes": [
+        "Listing too many problems without explaining any in depth",
+        "Proposing vague or unrealistic solutions (e.g., 'the government should ban cars')",
+        "Problems and solutions not matching 鈥?solving a different problem than the one discussed",
+        "Focusing too much on problems and giving insufficient attention to solutions",
+        "Failing to explain HOW a solution would actually solve the problem"
+      ]
+    },
+    {
+      "type": "advantages_disadvantages",
+      "name_en": "Advantages-Disadvantages Essay",
+      "name_zh": "鍒╁紛鍒嗘瀽鍨?",
+      "description": "Do the advantages outweigh the disadvantages? / What are the advantages and disadvantages?",
+      "typical_prompts": [
+        "Do the advantages of this outweigh the disadvantages?",
+        "What are the advantages and disadvantages of this development?",
+        "Discuss the advantages and disadvantages and give your opinion."
+      ],
+      "structure": {
+        "introduction": {
+          "purpose": "Introduce the topic and paraphrase the trend or development being discussed. If the prompt asks whether advantages outweigh disadvantages, state your position clearly. If it simply asks you to discuss both, outline that you will do so.",
+          "template": "In recent years, [paraphrase the trend or development] has become increasingly prevalent. While this brings certain benefits, it also carries notable drawbacks. This essay will analyze both sides before reaching the conclusion that [your position on whether advantages or disadvantages are greater].",
+          "word_count": "45-55 words",
+          "key_elements": [
+            "Paraphrase the development or trend",
+            "Acknowledge that both advantages and disadvantages exist",
+            "State your overall position if the prompt asks 'do advantages outweigh disadvantages?'",
+            "Use cautious language if you are not required to take a definitive stance"
+          ]
+        },
+        "body_paragraph_1": {
+          "purpose": "Discuss the advantages/benefits. Present 2-3 clear advantages, each supported by reasoning and examples. Organize advantages from strongest to weakest, or group related ones together.",
+          "structure": "Topic sentence (overview of advantages) 鈫?Advantage 1 with explanation and example 鈫?Advantage 2 with explanation and example 鈫?Optional link to next paragraph",
+          "template": "On the positive side, [this development] offers several notable advantages. First and foremost, [advantage 1]. This means that [explanation of the benefit]. For example, [specific example showing the advantage in practice]. Additionally, [advantage 2] allows for [benefit], as evidenced by [example or data]. These benefits demonstrate that [this development] has considerable merit.",
+          "word_count": "90-110 words"
+        },
+        "body_paragraph_2": {
+          "purpose": "Discuss the disadvantages/drawbacks. Mirror the structure of the advantages paragraph. Be fair and objective 鈥?even if you believe advantages outweigh disadvantages, give honest weight to the downsides.",
+          "structure": "Topic sentence (acknowledge disadvantages) 鈫?Disadvantage 1 with explanation and example 鈫?Disadvantage 2 with explanation and example 鈫?Transition toward evaluation",
+          "template": "However, [this development] is not without its drawbacks. Perhaps the most significant concern is [disadvantage 1]. This is problematic because [explanation of the negative impact]. A case in point is [example showing the problem]. Furthermore, [disadvantage 2] poses a risk to [affected group or area], leading to [specific negative outcome]. These issues warrant careful consideration.",
+          "word_count": "90-110 words"
+        },
+        "body_paragraph_3_or_evaluation": {
+          "purpose": "If the question asks whether advantages OUTWEIGH disadvantages, you need an evaluation paragraph where you weigh them and justify your conclusion. If the question only asks you to discuss both, this paragraph can be omitted (move evaluation to the conclusion).",
+          "structure": "Compare the relative importance of advantages and disadvantages 鈫?Justify why one side is more significant 鈫?Use criteria for evaluation (e.g., long-term vs. short-term, number of people affected, severity)",
+          "template": "On balance, I believe the advantages of [the development] outweigh its disadvantages, provided that appropriate safeguards are in place. While [disadvantage] is a genuine concern, it can be mitigated through [brief solution]. Meanwhile, the benefits of [advantage] are far-reaching and can fundamentally improve [area]. The key is to maximize the positives while minimizing the negatives through sensible regulation.",
+          "word_count": "60-80 words",
+          "note": "You can also integrate this evaluation into the conclusion if you prefer a 4-paragraph structure."
+        },
+        "conclusion": {
+          "purpose": "Summarize the key advantages and disadvantages. If a position is required, restate it clearly. If only a discussion is required, provide a balanced summary.",
+          "template": "In conclusion, [this development] presents both opportunities and challenges. While [key advantage] is a significant benefit, [key disadvantage] cannot be ignored. Ultimately, [your final verdict on whether advantages or disadvantages prevail] with the caveat that careful management is essential to [maximize benefits / minimize harm].",
+          "word_count": "40-55 words",
+          "key_elements": [
+            "Mention both advantages and disadvantages in summary",
+            "State your final verdict if required",
+            "Add a qualifying statement for balance",
+            "End with a recommendation for maximizing the positive"
+          ]
+        }
+      },
+      "band7_tips": [
+        "If the question asks whether advantages outweigh disadvantages, you MUST answer this 鈥?it is not optional",
+        "Give roughly equal attention to both sides before stating which prevails",
+        "Use evaluation criteria to justify why one side outweighs the other (e.g., short-term pain for long-term gain)",
+        "Support each advantage and disadvantage with specific, credible examples",
+        "Use concession language for balance: 'while it is true that...', 'admittedly...', 'that said...'",
+        "Avoid simply listing pros and cons 鈥?explain the significance and implications of each"
+      ],
+      "common_mistakes": [
+        "Only discussing advantages and forgetting to discuss disadvantages (or vice versa)",
+        "Failing to state clearly whether advantages outweigh disadvantages when asked",
+        "Listing points without explaining why they matter",
+        "Giving disproportionate space to one side, suggesting bias",
+        "Writing a conclusion that contradicts the body paragraphs"
+      ]
+    },
+    {
+      "type": "two_part_question",
+      "name_en": "Two-Part Question (Direct Questions)",
+      "name_zh": "鍙岄噸闂鍨嬶紙鐩存帴闂锛?",
+      "description": "Answer two or more direct questions in a single prompt.",
+      "typical_prompts": [
+        "What are the reasons for this? Is this a positive or negative development?",
+        "Why is this happening? What can be done about it?",
+        "How does this affect individuals? What can society do to address this?",
+        "What factors contribute to this? Do you think this is a positive trend?"
+      ],
+      "structure": {
+        "introduction": {
+          "purpose": "Introduce the general topic and paraphrase the context. Clearly state that you will address the specific questions asked. Do not answer the questions yet 鈥?just signal the structure of your essay.",
+          "template": "In recent times, [paraphrase the scenario or topic] has attracted considerable attention. This essay will explore [brief reference to question 1] and then consider [brief reference to question 2], before offering a reasoned conclusion.",
+          "word_count": "35-45 words",
+          "key_elements": [
+            "General introduction to the topic",
+            "Paraphrase the key elements of the prompt",
+            "Outline the questions you will answer",
+            "Keep it brief 鈥?the body will contain the substantive answers"
+          ]
+        },
+        "body_paragraph_1": {
+          "purpose": "Answer the FIRST question comprehensively. This paragraph should be entirely dedicated to answering the first question with reasoning, explanation, and examples. Make sure your answer is direct and clearly signaled.",
+          "structure": "Topic sentence (directly answer question 1) 鈫?Explanation (reasoning or elaboration) 鈫?Supporting example 鈫?Concluding sentence that ties the answer together",
+          "template": "With regard to [question 1], there are several key factors to consider. Primarily, [answer/main point]. This is because [detailed explanation of the reasoning]. For instance, [specific example illustrating the point]. This demonstrates that [concluding statement that reinforces the answer].",
+          "word_count": "85-100 words",
+          "important_note": "Make sure your answer to the first question is complete before moving on. Do not mix answers to both questions in one paragraph."
+        },
+        "body_paragraph_2": {
+          "purpose": "Answer the SECOND question comprehensively. Use the same pattern as body paragraph 1, but ensure the two paragraphs are clearly distinct. Use transition signals to indicate you are moving to the second question.",
+          "structure": "Topic sentence (introduce the second question and your answer) 鈫?Explanation (develop your reasoning) 鈫?Supporting example 鈫?Concluding thought",
+          "template": "As for [question 2], I believe that [direct answer]. The rationale behind this is that [explanation]. A compelling example of this can be found in [specific case or data]. Thus, [concluding statement for question 2].",
+          "word_count": "85-100 words",
+          "note": "If there are THREE questions (rare), add a third body paragraph."
+        },
+        "conclusion": {
+          "purpose": "Synthesize your answers to both questions. Do not simply repeat 鈥?show how the answers relate to each other and to the broader topic. End with a final insight or recommendation.",
+          "template": "In conclusion, [brief summary of answer to question 1], and [brief summary of answer to question 2]. These two aspects are interconnected, as [explain the relationship between the two answers]. Moving forward, it is essential that [recommendation or broader insight].",
+          "word_count": "45-55 words",
+          "key_elements": [
+            "Summarize the answer to question 1 (one sentence)",
+            "Summarize the answer to question 2 (one sentence)",
+            "Show the connection between the two answers",
+            "End with an insight, prediction, or recommendation"
+          ]
+        }
+      },
+      "band7_tips": [
+        "Answer both questions equally 鈥?do not spend 80% of the essay on one question",
+        "Make it absolutely clear which question you are answering in each paragraph",
+        "Use clear structural signals: 'Regarding the first question...', 'As for the second question...'",
+        "The two questions are often related 鈥?show the connection in your conclusion",
+        "Plan before writing: create a clear outline matching each question to a body paragraph",
+        "Do not combine answers to both questions in a single paragraph",
+        "Ensure each answer is fully developed with explanation and examples, not just a one-sentence claim"
+      ],
+      "common_mistakes": [
+        "Forgetting to answer one of the questions completely",
+        "Mixing answers to both questions in each body paragraph (resulting in a confusing structure)",
+        "Spending far more time on one question than the other",
+        "Answering the questions in the wrong order (making the essay hard to follow)",
+        "Writing a generic essay that does not specifically address the exact questions asked",
+        "Failing to show the relationship between the two questions in the conclusion"
+      ]
+    }
+  ]
+}

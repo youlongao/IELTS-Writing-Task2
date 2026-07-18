@@ -1,0 +1,201 @@
+{
+  "samples": [
+    {
+      "id": "sample_001",
+      "topic": "education",
+      "question_type": "opinion",
+      "paragraph_type": "body_paragraph",
+      "title": "University education develops critical thinking skills beyond subject knowledge",
+      "content": "One significant advantage of university education is that it equips students with critical thinking skills rather than merely imparting factual knowledge. Through seminar discussions, research projects, and exposure to diverse perspectives, students learn to evaluate evidence, question assumptions, and construct logical arguments. These analytical abilities are highly valued by employers across various sectors, from finance to technology. For instance, a study by the World Economic Forum consistently ranks critical thinking among the top skills required in the modern workplace. Therefore, the value of higher education extends far beyond the specific subject knowledge gained, preparing graduates to navigate an increasingly complex world.",
+      "word_count": 102,
+      "analysis": {
+        "topic_sentence": "Clearly states the main idea: university education develops critical thinking, not just factual knowledge",
+        "explanation": "Explains HOW university develops critical thinking through specific methods: seminar discussions, research projects, exposure to diverse perspectives",
+        "example": "WEF study ranking critical thinking as a top workplace skill — specific and credible reference",
+        "linking": "Therefore links back to the main argument, extending it to prepare graduates for a complex world",
+        "vocabulary_highlights": [
+          "equips students with",
+          "imparting factual knowledge",
+          "exposure to diverse perspectives",
+          "evaluate evidence",
+          "construct logical arguments",
+          "analytical abilities",
+          "extends far beyond",
+          "navigate an increasingly complex world"
+        ],
+        "cohesion_devices": [
+          "rather than",
+          "through",
+          "from... to",
+          "for instance",
+          "therefore"
+        ],
+        "band_descriptors": {
+          "task_response": "Fully developed main idea with clear position and well-supported argument",
+          "coherence_cohesion": "Logical progression from idea to explanation to example to conclusion",
+          "lexical_resource": "Strong academic vocabulary with natural collocations and precise word choice",
+          "grammatical_range": "Mix of complex sentence structures with accurate punctuation"
+        }
+      }
+    },
+    {
+      "id": "sample_002",
+      "topic": "technology",
+      "question_type": "discussion",
+      "paragraph_type": "body_paragraph",
+      "title": "Social media connects people globally but erodes face-to-face interaction skills",
+      "content": "On the one hand, proponents of social media argue that these platforms have revolutionized communication by enabling instant connection across vast geographical distances. By virtue of applications such as WhatsApp and Zoom, families separated by continents can now maintain close relationships through daily video calls and instant messaging. This unprecedented level of connectivity has also facilitated international business collaboration and cultural exchange on a scale previously unimaginable. For example, during the COVID-19 pandemic, social media platforms became lifelines for millions, allowing people to work remotely, attend virtual classes, and stay connected with loved ones. Clearly, the ability to bridge physical distance is a remarkable benefit of modern communication technology.",
+      "word_count": 108,
+      "analysis": {
+        "topic_sentence": "Clearly identifies this as the positive side of the argument, with specific claim about revolutionizing communication",
+        "explanation": "Explains the mechanism: instant connection across distances, supported by specific app examples",
+        "example": "COVID-19 pandemic as a powerful real-world illustration — specific, recent, and highly relevant",
+        "linking": "Clearly signals back to the positive assessment with 'a remarkable benefit'",
+        "vocabulary_highlights": [
+          "revolutionized communication",
+          "enabling instant connection",
+          "by virtue of",
+          "vast geographical distances",
+          "unprecedented level of connectivity",
+          "facilitated international collaboration",
+          "on a scale previously unimaginable",
+          "became lifelines for millions",
+          "bridge physical distance"
+        ],
+        "cohesion_devices": [
+          "on the one hand",
+          "by virtue of",
+          "such as",
+          "for example",
+          "clearly"
+        ],
+        "band_descriptors": {
+          "task_response": "Presents one side of the discussion fairly with well-developed support",
+          "coherence_cohesion": "Smooth logical flow from general claim to specific mechanism to real-world example",
+          "lexical_resource": "Rich vocabulary range with precise academic collocations",
+          "grammatical_range": "Effective use of complex noun phrases and participial clauses"
+        }
+      }
+    },
+    {
+      "id": "sample_003",
+      "topic": "environment",
+      "question_type": "problem_solution",
+      "paragraph_type": "body_paragraph",
+      "title": "Plastic pollution causes severe harm to marine ecosystems and human health",
+      "content": "One of the most pressing problems caused by excessive plastic consumption is the devastating impact on marine ecosystems. Each year, an estimated eight million tons of plastic waste enter the world's oceans, where it breaks down into microplastics that infiltrate the food chain. This contamination has dire consequences: marine animals, from seabirds to whales, ingest or become entangled in plastic debris, often with fatal results. Furthermore, these microplastics eventually make their way onto our dinner plates through seafood consumption, potentially posing serious health risks to humans, including hormonal disruption and increased cancer risk. Unless drastic action is taken, scientists predict that by 2050 there will be more plastic than fish in the ocean by weight — a staggering prospect that underscores the urgency of addressing this environmental crisis.",
+      "word_count": 127,
+      "analysis": {
+        "topic_sentence": "Clearly identifies the problem with strong evaluative language: 'most pressing', 'devastating impact'",
+        "explanation": "Uses specific data (8 million tons) and explains the mechanism: plastic breaks down into microplastics that enter the food chain",
+        "example": "Specific examples of affected animals (seabirds, whales), specific health risks (hormonal disruption, cancer risk)",
+        "linking": "Unless clause creates urgency and transitions toward the need for solutions. Statistics-based prediction adds gravitas.",
+        "vocabulary_highlights": [
+          "excessive plastic consumption",
+          "devastating impact",
+          "infiltrate the food chain",
+          "dire consequences",
+          "become entangled in",
+          "fatal results",
+          "hormonal disruption",
+          "a staggering prospect",
+          "underscores the urgency"
+        ],
+        "cohesion_devices": [
+          "each year",
+          "furthermore",
+          "unless",
+          "by 2050"
+        ],
+        "band_descriptors": {
+          "task_response": "Highly developed problem analysis with specific data and clear consequences",
+          "coherence_cohesion": "Logical chain: cause (plastic waste) → mechanism (microplastics) → effect (marine life + human health)",
+          "lexical_resource": "Strong environmental and scientific vocabulary, powerful evaluative language",
+          "grammatical_range": "Complex sentences with subordinate clauses, passive constructions, and conditional structures"
+        }
+      }
+    },
+    {
+      "id": "sample_004",
+      "topic": "health",
+      "question_type": "advantages_disadvantages",
+      "paragraph_type": "body_paragraph",
+      "title": "Preventive healthcare reduces long-term costs but requires significant upfront investment",
+      "content": "However, despite its undeniable long-term benefits, a preventive approach to healthcare is not without significant challenges. The most formidable obstacle is the substantial upfront investment required to establish comprehensive screening programs, public health campaigns, and the necessary medical infrastructure. Governments, particularly in developing nations with already strained budgets, may struggle to allocate sufficient funds to preventive measures when they are also grappling with immediate healthcare crises. For example, a nationwide cancer screening initiative can cost billions of dollars before any savings from early detection are realized. Consequently, policymakers often face the difficult choice between investing in long-term prevention and addressing urgent, short-term medical needs. The financial and logistical hurdles of shifting from a reactive to a preventive healthcare model should not be underestimated.",
+      "word_count": 120,
+      "analysis": {
+        "topic_sentence": "Acknowledges long-term benefits while introducing the key disadvantage — balances the argument",
+        "explanation": "Explains three specific types of upfront costs: screening programs, public health campaigns, medical infrastructure",
+        "example": "Nationwide cancer screening as a concrete example showing the scale of investment required (billions of dollars before returns)",
+        "linking": "Consequently links to the policy dilemma; final sentence powerfully reinforces the challenge with 'should not be underestimated'",
+        "vocabulary_highlights": [
+          "undeniable long-term benefits",
+          "formidable obstacle",
+          "substantial upfront investment",
+          "comprehensive screening programs",
+          "strained budgets",
+          "grappling with immediate crises",
+          "early detection",
+          "logistical hurdles",
+          "reactive to a preventive healthcare model",
+          "should not be underestimated"
+        ],
+        "cohesion_devices": [
+          "however",
+          "particularly",
+          "for example",
+          "consequently",
+          "before"
+        ],
+        "band_descriptors": {
+          "task_response": "Balanced presentation of a disadvantage with clear development and real-world relevance",
+          "coherence_cohesion": "Clear cause (upfront costs) → effect (budget strain, policy dilemma) structure",
+          "lexical_resource": "Sophisticated vocabulary range appropriate to policy and economics discussion",
+          "grammatical_range": "Complex sentences with embedded clauses, effective use of hedging and qualifying language"
+        }
+      }
+    },
+    {
+      "id": "sample_005",
+      "topic": "globalization",
+      "question_type": "discussion",
+      "paragraph_type": "body_paragraph",
+      "title": "Globalization leads to cultural homogenization and the erosion of local traditions",
+      "content": "On the other hand, critics of globalization contend that the spread of a dominant global culture comes at the expense of local traditions and cultural diversity. As multinational corporations expand their reach, local businesses struggle to compete, leading to the proliferation of identical high-street chains and the disappearance of unique regional shops. More worryingly, the pervasive influence of Western media and entertainment has led younger generations in many countries to adopt foreign values and lifestyles, often at the expense of their own cultural heritage. In countries such as India and Japan, for instance, traditional festivals and crafts are increasingly at risk of being abandoned as young people gravitate toward globalized forms of entertainment and consumption. The result is a world that, for all its connectivity, is becoming culturally homogenized — a trend that many find deeply alarming.",
+      "word_count": 128,
+      "analysis": {
+        "topic_sentence": "Clear presentation of the critical perspective on globalization, with a specific focus on cultural costs",
+        "explanation": "Two distinct mechanisms explained: economic (multinational corporations displacing local businesses) and cultural (Western media influencing values)",
+        "example": "India and Japan as concrete examples of countries where traditional festivals and crafts are at risk — specific, credible",
+        "linking": "The result is ties the argument together; the final clause 'for all its connectivity' uses concession to strengthen the point",
+        "vocabulary_highlights": [
+          "dominant global culture",
+          "comes at the expense of",
+          "cultural diversity",
+          "multinational corporations",
+          "proliferation of identical chains",
+          "pervasive influence",
+          "adopt foreign values and lifestyles",
+          "cultural heritage",
+          "gravitate toward",
+          "culturally homogenized",
+          "deeply alarming"
+        ],
+        "cohesion_devices": [
+          "on the other hand",
+          "as",
+          "more worryingly",
+          "for instance",
+          "increasingly",
+          "for all its"
+        ],
+        "band_descriptors": {
+          "task_response": "Well-developed critical analysis with economic and cultural dimensions fully explored",
+          "coherence_cohesion": "Two parallel sub-arguments (economic + cultural) that converge on the same conclusion about homogenization",
+          "lexical_resource": "Advanced vocabulary with precise cultural and economic terminology",
+          "grammatical_range": "Varied structures including concession clauses, participial phrases, and relative clauses"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# Prompt Template: Question Analyzer (v1)
+# Purpose: Analyze an IELTS Task 2 question to identify type and core issues.
+# Version: v1
+
+system: |
+  You are an IELTS Writing Task 2 teacher for Chinese-speaking learners.
+  Your job is to help students understand the question in Simplified Chinese before they write.
+  Do not write the essay. Do not recommend one final stance yet unless the prompt requires a clear opinion.
+  Keep important IELTS keywords in English with short Chinese meanings.
+
+user: |
+  ## IELTS Task 2 Question
+
+  {question}
+
+  ## Task
+
+  Analyze the question for a Band 6.5-7 learner who often gets stuck on ideas.
+  The learner's first language is Chinese, so the analysis should be easy to understand in Simplified Chinese.
+
+  Return these sections, with section headings translated into natural Simplified Chinese:
+
+  ## Question Type
+  Identify the type: Opinion, Discussion, Problem-Solution, Advantages-Disadvantages, or Two-Part Question. Explain briefly why in Simplified Chinese.
+  Important rule: a single "How has/how have/why has/why have..." question that asks the learner to explain causes, mechanisms, or effects should be treated as a Discussion/Explanation question, not as an Opinion essay and not as a Two-Part Question.
+
+  ## Core Issue
+  Explain the real debate behind the question in 1-2 Chinese sentences.
+
+  ## Key Parts of the Prompt
+  Break the prompt into 2-3 parts and explain in Chinese what each part asks the student to do.
+
+  ## Common Risk
+  Explain in Chinese where students may go off-topic or answer only part of the question.
+
+  ## Useful Angles
+  List 2-4 possible angles and explain their use in Chinese, such as individual vs society, short-term vs long-term, economy vs environment, urban vs rural, or fairness vs efficiency.
+
+  ## Keywords
+  List 5-8 important English keywords with Chinese meanings.
+
+  ## Likely Topics
+  Choose from: Education, Technology, Environment, Crime, Health, Transport, Work, Globalization. Also give the Chinese topic name.

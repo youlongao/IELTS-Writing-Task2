@@ -1,0 +1,51 @@
+# IELTS Writing Task 2 - Default Configuration
+
+app:
+  name: "IELTS Writing Task 2 Agent"
+  version: "0.1.0"
+  default_provider: "openai"  # openai | deepseek
+  default_language: "zh"      # zh (Chinese) | en (English)
+
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  chroma_persist_dir: "./data/chroma_db"
+  chunk_size: 500
+  chunk_overlap: 50
+  retrieval:
+    top_k_per_collection: 3
+    collections:
+      - topics
+      - vocabulary
+      - structures
+      - rubrics
+      - sample_essays
+
+agent:
+  workflow:
+    question_analyzer:
+      prompt_version: "v1"
+      temperature: 0.3
+      max_tokens: 500
+    idea_generator:
+      prompt_version: "v1"
+      temperature: 0.7
+      max_tokens: 1500
+    outline_builder:
+      prompt_version: "v1"
+      temperature: 0.5
+      max_tokens: 1000
+
+harness:
+  judge_model: "openai"  # openai | deepseek; model used for LLM-as-judge evaluation
+  default_test_count: 10
+  metrics:
+    - task_response
+    - coherence_cohesion
+    - lexical_resource
+    - grammatical_range
+    - specificity_score
+    - band_alignment
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

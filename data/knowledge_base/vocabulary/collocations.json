@@ -1,0 +1,1804 @@
+{
+  "collocations": [
+    {
+      "id": "col_001",
+      "english": "play a pivotal role in",
+      "chinese": "鍦?..涓捣鍏抽敭浣滅敤",
+      "function": "introducing_importance",
+      "topic": "general",
+      "example_sentence": "Education plays a pivotal role in shaping a child's future.",
+      "band_level": 7
+    },
+    {
+      "id": "col_002",
+      "english": "it is widely acknowledged that",
+      "chinese": "浜轰滑鏅亶璁や负",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "It is widely acknowledged that climate change poses a serious threat to our planet.",
+      "band_level": 7
+    },
+    {
+      "id": "col_003",
+      "english": "a double-edged sword",
+      "chinese": "鍙屽垉鍓?",
+      "function": "showing_contrast",
+      "topic": "technology",
+      "example_sentence": "The internet is a double-edged sword, offering both opportunities and risks.",
+      "band_level": 7
+    },
+    {
+      "id": "col_004",
+      "english": "take concrete measures to",
+      "chinese": "閲囧彇鍏蜂綋鎺柦",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "Governments must take concrete measures to reduce carbon emissions.",
+      "band_level": 7
+    },
+    {
+      "id": "col_005",
+      "english": "impose stricter regulations on",
+      "chinese": "瀵?..瀹炴柦鏇翠弗鏍肩殑鐩戠",
+      "function": "introducing_arguments",
+      "topic": "crime",
+      "example_sentence": "Authorities should impose stricter regulations on the sale of alcohol.",
+      "band_level": 7
+    },
+    {
+      "id": "col_006",
+      "english": "bear the responsibility for",
+      "chinese": "鎵挎媴...鐨勮矗浠?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "Parents bear the primary responsibility for their children's moral development.",
+      "band_level": 7
+    },
+    {
+      "id": "col_007",
+      "english": "a pressing concern",
+      "chinese": "涓€涓揣杩殑闂",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "Environmental degradation remains a pressing concern for policymakers worldwide.",
+      "band_level": 7
+    },
+    {
+      "id": "col_008",
+      "english": "the merits outweigh the drawbacks",
+      "chinese": "鍒╁ぇ浜庡紛",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "On balance, the merits of urbanization outweigh the drawbacks.",
+      "band_level": 7
+    },
+    {
+      "id": "col_009",
+      "english": "from a different perspective",
+      "chinese": "浠庡彟涓€涓搴︾湅",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "From a different perspective, immigration enriches the cultural fabric of a nation.",
+      "band_level": 7
+    },
+    {
+      "id": "col_010",
+      "english": "in the long run",
+      "chinese": "浠庨暱杩滄潵鐪?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Investing in renewable energy will prove beneficial in the long run.",
+      "band_level": 7
+    },
+    {
+      "id": "col_011",
+      "english": "in the short term",
+      "chinese": "鐭湡鍐?",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "In the short term, the policy may cause economic disruption.",
+      "band_level": 7
+    },
+    {
+      "id": "col_012",
+      "english": "give rise to",
+      "chinese": "寮曡捣锛屽鑷?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Rapid urbanization has given rise to numerous social problems.",
+      "band_level": 7
+    },
+    {
+      "id": "col_013",
+      "english": "bridge the gap between",
+      "chinese": "寮ュ悎...涔嬮棿鐨勫樊璺?",
+      "function": "introducing_arguments",
+      "topic": "education",
+      "example_sentence": "Scholarships can help bridge the gap between rich and poor students.",
+      "band_level": 7
+    },
+    {
+      "id": "col_014",
+      "english": "allocate resources to",
+      "chinese": "灏嗚祫婧愬垎閰嶇粰",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "The government should allocate more resources to public healthcare.",
+      "band_level": 7
+    },
+    {
+      "id": "col_015",
+      "english": "be conducive to",
+      "chinese": "鏈夊埄浜?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "A supportive family environment is conducive to a child's academic success.",
+      "band_level": 7
+    },
+    {
+      "id": "col_016",
+      "english": "pose a threat to",
+      "chinese": "瀵?..鏋勬垚濞佽儊",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "Deforestation poses a serious threat to biodiversity.",
+      "band_level": 7
+    },
+    {
+      "id": "col_017",
+      "english": "a growing body of evidence suggests that",
+      "chinese": "瓒婃潵瓒婂鐨勮瘉鎹〃鏄?",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "A growing body of evidence suggests that regular exercise improves mental health.",
+      "band_level": 8
+    },
+    {
+      "id": "col_018",
+      "english": "it is undeniable that",
+      "chinese": "涓嶅彲鍚﹁鐨勬槸",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "It is undeniable that technology has transformed the way we communicate.",
+      "band_level": 7
+    },
+    {
+      "id": "col_019",
+      "english": "take... for granted",
+      "chinese": "璁や负...鐞嗘墍褰撶劧",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "Many people take clean water for granted in developed countries.",
+      "band_level": 7
+    },
+    {
+      "id": "col_020",
+      "english": "lay a solid foundation for",
+      "chinese": "涓?..濂犲畾鍧氬疄鍩虹",
+      "function": "showing_cause_effect",
+      "topic": "education",
+      "example_sentence": "Primary education lays a solid foundation for lifelong learning.",
+      "band_level": 7
+    },
+    {
+      "id": "col_021",
+      "english": "a heated debate over",
+      "chinese": "鍏充簬...鐨勬縺鐑堜簤璁?",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "There has been a heated debate over the legalization of euthanasia.",
+      "band_level": 7
+    },
+    {
+      "id": "col_022",
+      "english": "take... into account",
+      "chinese": "鑰冭檻鍒帮紝椤惧強",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Policy makers must take the needs of minority groups into account.",
+      "band_level": 7
+    },
+    {
+      "id": "col_023",
+      "english": "a staggering amount of",
+      "chinese": "鏁伴噺鎯婁汉鐨?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "A staggering amount of food is wasted every year in developed nations.",
+      "band_level": 7
+    },
+    {
+      "id": "col_024",
+      "english": "on a global scale",
+      "chinese": "鍦ㄥ叏鐞冭寖鍥村唴",
+      "function": "generalizing",
+      "topic": "globalization",
+      "example_sentence": "Climate change must be addressed on a global scale.",
+      "band_level": 7
+    },
+    {
+      "id": "col_025",
+      "english": "it is worth noting that",
+      "chinese": "鍊煎緱娉ㄦ剰鐨勬槸",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "It is worth noting that not all technological advances are beneficial.",
+      "band_level": 7
+    },
+    {
+      "id": "col_026",
+      "english": "by no means",
+      "chinese": "缁濅笉",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "Technology is by no means a panacea for all educational challenges.",
+      "band_level": 8
+    },
+    {
+      "id": "col_027",
+      "english": "a matter of great urgency",
+      "chinese": "闈炲父绱ц揩鐨勪簨鎯?",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "Addressing plastic pollution is a matter of great urgency.",
+      "band_level": 7
+    },
+    {
+      "id": "col_028",
+      "english": "put... at a disadvantage",
+      "chinese": "浣?..澶勪簬涓嶅埄鍦颁綅",
+      "function": "showing_cause_effect",
+      "topic": "education",
+      "example_sentence": "Lack of internet access puts rural students at a disadvantage.",
+      "band_level": 7
+    },
+    {
+      "id": "col_029",
+      "english": "a top priority",
+      "chinese": "棣栬浠诲姟",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "Reducing unemployment should be a top priority for the government.",
+      "band_level": 7
+    },
+    {
+      "id": "col_030",
+      "english": "strike a balance between",
+      "chinese": "鍦?..涔嬮棿鍙栧緱骞宠　",
+      "function": "showing_contrast",
+      "topic": "work",
+      "example_sentence": "Employees need to strike a balance between their professional and personal lives.",
+      "band_level": 7
+    },
+    {
+      "id": "col_031",
+      "english": "on the one hand... on the other hand",
+      "chinese": "涓€鏂归潰...鍙︿竴鏂归潰",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "On the one hand, tourism boosts the economy; on the other hand, it can damage the environment.",
+      "band_level": 7
+    },
+    {
+      "id": "col_032",
+      "english": "a contributing factor to",
+      "chinese": "...鐨勪竴涓績鎴愬洜绱?",
+      "function": "showing_cause_effect",
+      "topic": "health",
+      "example_sentence": "A sedentary lifestyle is a contributing factor to obesity.",
+      "band_level": 7
+    },
+    {
+      "id": "col_033",
+      "english": "it is generally believed that",
+      "chinese": "浜轰滑鏅亶璁や负",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "It is generally believed that education is the key to success.",
+      "band_level": 7
+    },
+    {
+      "id": "col_034",
+      "english": "play an integral part in",
+      "chinese": "鍦?..涓捣涓嶅彲鎴栫己鐨勪綔鐢?",
+      "function": "introducing_importance",
+      "topic": "general",
+      "example_sentence": "Teachers play an integral part in shaping young minds.",
+      "band_level": 7
+    },
+    {
+      "id": "col_035",
+      "english": "be inextricably linked to",
+      "chinese": "涓?..瀵嗕笉鍙垎",
+      "function": "showing_cause_effect",
+      "topic": "environment",
+      "example_sentence": "Economic growth is inextricably linked to energy consumption.",
+      "band_level": 8
+    },
+    {
+      "id": "col_036",
+      "english": "a staggering statistic",
+      "chinese": "鎯婁汉鐨勭粺璁℃暟鎹?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "A staggering statistic reveals that one in three adults is overweight.",
+      "band_level": 7
+    },
+    {
+      "id": "col_037",
+      "english": "a substantial proportion of",
+      "chinese": "鐩稿綋澶ф瘮渚嬬殑",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "A substantial proportion of the population relies on public transport.",
+      "band_level": 7
+    },
+    {
+      "id": "col_038",
+      "english": "by virtue of",
+      "chinese": "鍑€燂紝鐢变簬",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "By virtue of their experience, older workers bring valuable insights to the workplace.",
+      "band_level": 8
+    },
+    {
+      "id": "col_039",
+      "english": "in stark contrast to",
+      "chinese": "涓?..褰㈡垚椴滄槑瀵规瘮",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "In stark contrast to previous generations, today's youth are digital natives.",
+      "band_level": 8
+    },
+    {
+      "id": "col_040",
+      "english": "exert a profound influence on",
+      "chinese": "瀵?..浜х敓娣辫繙褰卞搷",
+      "function": "showing_cause_effect",
+      "topic": "technology",
+      "example_sentence": "Social media exerts a profound influence on public opinion.",
+      "band_level": 7
+    },
+    {
+      "id": "col_041",
+      "english": "at the expense of",
+      "chinese": "浠?..涓轰唬浠?",
+      "function": "showing_contrast",
+      "topic": "environment",
+      "example_sentence": "Economic development should not come at the expense of environmental protection.",
+      "band_level": 7
+    },
+    {
+      "id": "col_042",
+      "english": "a host of",
+      "chinese": "澶ч噺鐨勶紝璁稿鐨?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Urbanization brings a host of challenges for city planners.",
+      "band_level": 7
+    },
+    {
+      "id": "col_043",
+      "english": "mitigate the effects of",
+      "chinese": "鍑忚交...鐨勫奖鍝?",
+      "function": "introducing_arguments",
+      "topic": "environment",
+      "example_sentence": "Planting trees can help mitigate the effects of air pollution.",
+      "band_level": 7
+    },
+    {
+      "id": "col_044",
+      "english": "take proactive steps to",
+      "chinese": "閲囧彇绉瀬鎺柦",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "Companies should take proactive steps to reduce their carbon footprint.",
+      "band_level": 7
+    },
+    {
+      "id": "col_045",
+      "english": "be attributable to",
+      "chinese": "鍙綊鍥犱簬",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "The rise in obesity is largely attributable to poor dietary habits.",
+      "band_level": 7
+    },
+    {
+      "id": "col_046",
+      "english": "a wealth of",
+      "chinese": "澶ч噺鐨勶紝涓板瘜鐨?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "The internet provides a wealth of information on virtually any topic.",
+      "band_level": 7
+    },
+    {
+      "id": "col_047",
+      "english": "the crux of the matter is",
+      "chinese": "闂鐨勫叧閿湪浜?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "The crux of the matter is whether individuals or governments should take the lead.",
+      "band_level": 8
+    },
+    {
+      "id": "col_048",
+      "english": "in conjunction with",
+      "chinese": "涓?..缁撳悎/鍗忓悓",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Education, in conjunction with proper nutrition, is vital for child development.",
+      "band_level": 7
+    },
+    {
+      "id": "col_049",
+      "english": "a major breakthrough in",
+      "chinese": "...鏂归潰鐨勯噸澶х獊鐮?",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "Artificial intelligence represents a major breakthrough in computer science.",
+      "band_level": 7
+    },
+    {
+      "id": "col_050",
+      "english": "for the sake of",
+      "chinese": "涓轰簡...鐨勫埄鐩?缂樻晠",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Some sacrifices must be made for the sake of future generations.",
+      "band_level": 7
+    },
+    {
+      "id": "col_051",
+      "english": "be compelled to",
+      "chinese": "琚揩锛屼笉寰椾笉",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Many graduates are compelled to accept low-paying jobs due to market conditions.",
+      "band_level": 7
+    },
+    {
+      "id": "col_052",
+      "english": "in the wake of",
+      "chinese": "鍦?..涔嬪悗锛堥€氬父鎸囬噸澶т簨浠朵箣鍚庯級",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "In the wake of the pandemic, remote working has become the new norm.",
+      "band_level": 8
+    },
+    {
+      "id": "col_053",
+      "english": "a paradigm shift in",
+      "chinese": "...鐨勮寖寮忚浆鍙?",
+      "function": "emphasizing",
+      "topic": "education",
+      "example_sentence": "Online learning has triggered a paradigm shift in higher education.",
+      "band_level": 8
+    },
+    {
+      "id": "col_054",
+      "english": "shed light on",
+      "chinese": "闃愭槑锛屾彮绀?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Recent research has shed light on the causes of Alzheimer's disease.",
+      "band_level": 7
+    },
+    {
+      "id": "col_055",
+      "english": "a myriad of",
+      "chinese": "鏃犳暟鐨勶紝澶ч噺鐨?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Modern cities face a myriad of challenges related to sustainability.",
+      "band_level": 7
+    },
+    {
+      "id": "col_056",
+      "english": "it stands to reason that",
+      "chinese": "鏄捐€屾槗瑙侊紝鍚堜箮閫昏緫鐨勬槸",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "It stands to reason that healthier employees are more productive.",
+      "band_level": 8
+    },
+    {
+      "id": "col_057",
+      "english": "on a par with",
+      "chinese": "涓?..姘村钩鐩稿綋",
+      "function": "showing_contrast",
+      "topic": "education",
+      "example_sentence": "Vocational training should be on a par with academic education in terms of prestige.",
+      "band_level": 7
+    },
+    {
+      "id": "col_058",
+      "english": "at the forefront of",
+      "chinese": "澶勪簬...鐨勫墠娌?",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "Japan has long been at the forefront of technological innovation.",
+      "band_level": 7
+    },
+    {
+      "id": "col_059",
+      "english": "in the midst of",
+      "chinese": "鍦?..涔嬩腑锛屾澶勪簬",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "We are in the midst of a digital revolution.",
+      "band_level": 7
+    },
+    {
+      "id": "col_060",
+      "english": "fall prey to",
+      "chinese": "鎴愪负...鐨勭壓鐗插搧/鍙楀鑰?",
+      "function": "showing_cause_effect",
+      "topic": "crime",
+      "example_sentence": "Elderly people often fall prey to online scams.",
+      "band_level": 7
+    },
+    {
+      "id": "col_061",
+      "english": "provide a window into",
+      "chinese": "鎻愪緵涓€涓簡瑙?..鐨勭獥鍙?",
+      "function": "clarifying",
+      "topic": "education",
+      "example_sentence": "Studying history provides a window into past civilizations.",
+      "band_level": 7
+    },
+    {
+      "id": "col_062",
+      "english": "take issue with",
+      "chinese": "瀵?..鎸佸紓璁紝涓嶅悓鎰?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "I take issue with the notion that video games are purely harmful.",
+      "band_level": 7
+    },
+    {
+      "id": "col_063",
+      "english": "a fraction of",
+      "chinese": "涓€灏忛儴鍒?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Only a fraction of plastic waste is actually recycled.",
+      "band_level": 7
+    },
+    {
+      "id": "col_064",
+      "english": "come to terms with",
+      "chinese": "鎺ュ彈锛岄€傚簲",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Society must come to terms with the implications of an aging population.",
+      "band_level": 7
+    },
+    {
+      "id": "col_065",
+      "english": "a telling example of",
+      "chinese": "涓€涓湁鍔涚殑渚嬪瓙",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "Singapore is a telling example of how urban planning can transform a city.",
+      "band_level": 7
+    },
+    {
+      "id": "col_066",
+      "english": "stand someone in good stead",
+      "chinese": "瀵规煇浜哄緢鏈夊府鍔?鏈夊埄",
+      "function": "showing_cause_effect",
+      "topic": "education",
+      "example_sentence": "Learning a second language will stand students in good stead in the job market.",
+      "band_level": 8
+    },
+    {
+      "id": "col_067",
+      "english": "in all likelihood",
+      "chinese": "鍗佹湁鍏節锛屽緢鍙兘",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "In all likelihood, fossil fuels will be phased out within the next century.",
+      "band_level": 7
+    },
+    {
+      "id": "col_068",
+      "english": "bear testament to",
+      "chinese": "璇佹槑锛岃璇?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "These ruins bear testament to the ingenuity of ancient civilizations.",
+      "band_level": 8
+    },
+    {
+      "id": "col_069",
+      "english": "an upward trend in",
+      "chinese": "...鐨勪笂鍗囪秼鍔?",
+      "function": "generalizing",
+      "topic": "health",
+      "example_sentence": "There has been an upward trend in the consumption of organic food.",
+      "band_level": 7
+    },
+    {
+      "id": "col_070",
+      "english": "hold... in high regard",
+      "chinese": "楂樺害閲嶈/灏婇噸",
+      "function": "expressing_opinion",
+      "topic": "education",
+      "example_sentence": "Finnish society holds teachers in high regard.",
+      "band_level": 7
+    },
+    {
+      "id": "col_071",
+      "english": "to name but a few",
+      "chinese": "浠呬妇鍑犱緥",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "Solar, wind, and hydroelectric power, to name but a few, are renewable energy sources.",
+      "band_level": 7
+    },
+    {
+      "id": "col_072",
+      "english": "a school of thought that",
+      "chinese": "涓€绉嶈鐐?瀛︽淳璁や负",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "There is a school of thought that advocates for a universal basic income.",
+      "band_level": 7
+    },
+    {
+      "id": "col_073",
+      "english": "be synonymous with",
+      "chinese": "涓?..鍚屼箟",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "For many, owning a car is synonymous with personal freedom.",
+      "band_level": 7
+    },
+    {
+      "id": "col_074",
+      "english": "grapple with",
+      "chinese": "鍔姏搴斿/瑙ｅ喅",
+      "function": "introducing_arguments",
+      "topic": "environment",
+      "example_sentence": "Developing countries are grappling with the twin challenges of poverty and pollution.",
+      "band_level": 7
+    },
+    {
+      "id": "col_075",
+      "english": "a prevalent phenomenon",
+      "chinese": "鏅亶鐜拌薄",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Online shopping has become a prevalent phenomenon in recent years.",
+      "band_level": 7
+    },
+    {
+      "id": "col_076",
+      "english": "go a long way toward",
+      "chinese": "瀵?..澶ф湁甯姪",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Small lifestyle changes can go a long way toward improving overall health.",
+      "band_level": 7
+    },
+    {
+      "id": "col_077",
+      "english": "an inherent part of",
+      "chinese": "...鐨勫浐鏈夐儴鍒?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "Risk is an inherent part of entrepreneurship.",
+      "band_level": 7
+    },
+    {
+      "id": "col_078",
+      "english": "in light of",
+      "chinese": "鏍规嵁锛岄壌浜?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In light of recent evidence, the policy needs to be reconsidered.",
+      "band_level": 7
+    },
+    {
+      "id": "col_079",
+      "english": "make a compelling case for",
+      "chinese": "涓?..鎻愪緵鏈夊姏璁烘嵁",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "The data makes a compelling case for investing in early childhood education.",
+      "band_level": 7
+    },
+    {
+      "id": "col_080",
+      "english": "in the grand scheme of things",
+      "chinese": "浠庡ぇ灞€鏉ョ湅",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "In the grand scheme of things, individual actions do make a difference.",
+      "band_level": 7
+    },
+    {
+      "id": "col_081",
+      "english": "come at a price",
+      "chinese": "浠樺嚭浠ｄ环",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Urbanization may bring prosperity, but it comes at a price.",
+      "band_level": 7
+    },
+    {
+      "id": "col_082",
+      "english": "a wealth of experience",
+      "chinese": "涓板瘜鐨勭粡楠?",
+      "function": "emphasizing",
+      "topic": "work",
+      "example_sentence": "Older employees bring a wealth of experience to the workplace.",
+      "band_level": 7
+    },
+    {
+      "id": "col_083",
+      "english": "in this regard",
+      "chinese": "鍦ㄨ繖鏂归潰",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Technology has made great strides, and in this regard, education has benefited immensely.",
+      "band_level": 7
+    },
+    {
+      "id": "col_084",
+      "english": "the tide has turned",
+      "chinese": "褰㈠娍宸茬粡鏀瑰彉",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "The tide has turned in favor of sustainable energy sources.",
+      "band_level": 7
+    },
+    {
+      "id": "col_085",
+      "english": "take precedence over",
+      "chinese": "浼樺厛浜?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "In times of crisis, public health takes precedence over economic concerns.",
+      "band_level": 7
+    },
+    {
+      "id": "col_086",
+      "english": "in a similar vein",
+      "chinese": "鍚屾牱鍦帮紝绫讳技鍦?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "In a similar vein, the reform of healthcare must be a priority.",
+      "band_level": 7
+    },
+    {
+      "id": "col_087",
+      "english": "be confronted with",
+      "chinese": "闈复锛岄潰瀵?",
+      "function": "introducing_arguments",
+      "topic": "environment",
+      "example_sentence": "Humanity is confronted with the existential threat of climate change.",
+      "band_level": 7
+    },
+    {
+      "id": "col_088",
+      "english": "a noticeable shift toward",
+      "chinese": "鏄庢樉鐨勫悜...鐨勮浆鍙?",
+      "function": "generalizing",
+      "topic": "work",
+      "example_sentence": "There has been a noticeable shift toward flexible working arrangements.",
+      "band_level": 7
+    },
+    {
+      "id": "col_089",
+      "english": "by the same token",
+      "chinese": "鍚屾牱鍦帮紝涔?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Education empowers individuals; by the same token, it strengthens communities.",
+      "band_level": 7
+    },
+    {
+      "id": "col_090",
+      "english": "run counter to",
+      "chinese": "涓?..鑳岄亾鑰岄┌",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "Such policies run counter to the principles of free trade.",
+      "band_level": 7
+    },
+    {
+      "id": "col_091",
+      "english": "have a bearing on",
+      "chinese": "瀵?..鏈夊奖鍝?",
+      "function": "showing_cause_effect",
+      "topic": "education",
+      "example_sentence": "Parental involvement has a significant bearing on a child's academic performance.",
+      "band_level": 7
+    },
+    {
+      "id": "col_092",
+      "english": "a notable exception to",
+      "chinese": "涓€涓樉钁楃殑渚嬪",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "Sweden is a notable exception to the global trend of increasing inequality.",
+      "band_level": 7
+    },
+    {
+      "id": "col_093",
+      "english": "on the grounds that",
+      "chinese": "浠?..涓虹敱",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "The proposal was rejected on the grounds that it was too costly.",
+      "band_level": 7
+    },
+    {
+      "id": "col_094",
+      "english": "a recurrent theme",
+      "chinese": "涓€涓弽澶嶅嚭鐜扮殑涓婚",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Inequality is a recurrent theme in discussions about globalization.",
+      "band_level": 7
+    },
+    {
+      "id": "col_095",
+      "english": "in an effort to",
+      "chinese": "涓轰簡锛岃瘯鍥?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "In an effort to reduce congestion, the city introduced a congestion charge.",
+      "band_level": 7
+    },
+    {
+      "id": "col_096",
+      "english": "a case in point",
+      "chinese": "涓€涓緢濂界殑渚嬪瓙",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "A case in point is Finland, which has one of the best education systems in the world.",
+      "band_level": 7
+    },
+    {
+      "id": "col_097",
+      "english": "on a daily basis",
+      "chinese": "姣忓ぉ锛屾棩甯?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Millions of people commute long distances on a daily basis.",
+      "band_level": 7
+    },
+    {
+      "id": "col_098",
+      "english": "bring about significant changes in",
+      "chinese": "缁?..甯︽潵閲嶅ぇ鍙樺寲",
+      "function": "showing_cause_effect",
+      "topic": "technology",
+      "example_sentence": "The internet has brought about significant changes in the way we access information.",
+      "band_level": 7
+    },
+    {
+      "id": "col_099",
+      "english": "a diverse range of",
+      "chinese": "鍚勭鍚勬牱鐨?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "The university offers a diverse range of extracurricular activities.",
+      "band_level": 7
+    },
+    {
+      "id": "col_100",
+      "english": "in terms of",
+      "chinese": "鍦?..鏂归潰",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In terms of life expectancy, Japan ranks among the highest in the world.",
+      "band_level": 7
+    },
+    {
+      "id": "col_101",
+      "english": "a sense of belonging",
+      "chinese": "褰掑睘鎰?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "Community activities foster a sense of belonging among residents.",
+      "band_level": 7
+    },
+    {
+      "id": "col_102",
+      "english": "play a central role in",
+      "chinese": "鍦?..涓壆婕斾腑蹇冭鑹?",
+      "function": "introducing_importance",
+      "topic": "education",
+      "example_sentence": "Teachers play a central role in fostering students' creativity.",
+      "band_level": 7
+    },
+    {
+      "id": "col_103",
+      "english": "it goes without saying that",
+      "chinese": "涓嶈█鑰屽柣锛屽綋鐒?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "It goes without saying that clean water is essential for human survival.",
+      "band_level": 7
+    },
+    {
+      "id": "col_104",
+      "english": "at an alarming rate",
+      "chinese": "浠ユ儕浜虹殑閫熷害",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "The Amazon rainforest is being destroyed at an alarming rate.",
+      "band_level": 7
+    },
+    {
+      "id": "col_105",
+      "english": "cause irreversible damage to",
+      "chinese": "瀵?..閫犳垚涓嶅彲閫嗚浆鐨勬崯瀹?",
+      "function": "showing_cause_effect",
+      "topic": "environment",
+      "example_sentence": "Oil spills can cause irreversible damage to marine ecosystems.",
+      "band_level": 7
+    },
+    {
+      "id": "col_106",
+      "english": "it is reasonable to assume that",
+      "chinese": "鏈夌悊鐢辫涓?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "It is reasonable to assume that automation will eliminate some jobs.",
+      "band_level": 7
+    },
+    {
+      "id": "col_107",
+      "english": "a sharp decline in",
+      "chinese": "鎬ュ墽涓嬮檷",
+      "function": "generalizing",
+      "topic": "crime",
+      "example_sentence": "There has been a sharp decline in violent crime over the past decade.",
+      "band_level": 7
+    },
+    {
+      "id": "col_108",
+      "english": "in the foreseeable future",
+      "chinese": "鍦ㄥ彲棰勮鐨勬湭鏉?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "In the foreseeable future, fossil fuels will continue to play a role in the energy mix.",
+      "band_level": 7
+    },
+    {
+      "id": "col_109",
+      "english": "by and large",
+      "chinese": "鎬讳綋鑰岃█",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "By and large, people are living longer and healthier lives than ever before.",
+      "band_level": 7
+    },
+    {
+      "id": "col_110",
+      "english": "give due consideration to",
+      "chinese": "瀵?..缁欎簣搴旀湁鐨勮€冭檻",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "Employers must give due consideration to the mental well-being of their staff.",
+      "band_level": 7
+    },
+    {
+      "id": "col_111",
+      "english": "an unprecedented level of",
+      "chinese": "鍓嶆墍鏈湁姘村钩鐨?",
+      "function": "emphasizing",
+      "topic": "globalization",
+      "example_sentence": "Globalization has brought an unprecedented level of interconnectedness.",
+      "band_level": 7
+    },
+    {
+      "id": "col_112",
+      "english": "have the potential to",
+      "chinese": "鏈夋綔鍔?..",
+      "function": "expressing_opinion",
+      "topic": "technology",
+      "example_sentence": "Artificial intelligence has the potential to revolutionize healthcare.",
+      "band_level": 7
+    },
+    {
+      "id": "col_113",
+      "english": "in the ensuing years",
+      "chinese": "鍦ㄩ殢鍚庣殑鍑犲勾閲?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In the ensuing years, the policy proved to be remarkably effective.",
+      "band_level": 7
+    },
+    {
+      "id": "col_114",
+      "english": "a significant proportion of",
+      "chinese": "鐩稿綋澶т竴閮ㄥ垎",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "A significant proportion of household income is spent on housing.",
+      "band_level": 7
+    },
+    {
+      "id": "col_115",
+      "english": "a point of contention",
+      "chinese": "浜夎鐨勭劍鐐?",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "The funding of public healthcare remains a point of contention among politicians.",
+      "band_level": 7
+    },
+    {
+      "id": "col_116",
+      "english": "on the brink of",
+      "chinese": "婵掍复锛屽湪...杈圭紭",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "Several species are on the brink of extinction due to habitat loss.",
+      "band_level": 7
+    },
+    {
+      "id": "col_117",
+      "english": "the advent of",
+      "chinese": "...鐨勫嚭鐜?鍒版潵",
+      "function": "showing_cause_effect",
+      "topic": "technology",
+      "example_sentence": "The advent of smartphones has changed how people consume media.",
+      "band_level": 7
+    },
+    {
+      "id": "col_118",
+      "english": "be obliged to",
+      "chinese": "鏈変箟鍔?..",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "Governments are obliged to protect the rights of their citizens.",
+      "band_level": 7
+    },
+    {
+      "id": "col_119",
+      "english": "set... apart from",
+      "chinese": "浣?..涓庝紬涓嶅悓",
+      "function": "showing_contrast",
+      "topic": "education",
+      "example_sentence": "What sets this university apart from others is its focus on research.",
+      "band_level": 7
+    },
+    {
+      "id": "col_120",
+      "english": "with the notable exception of",
+      "chinese": "闄?..涔嬪锛堟樉钁椾緥澶栵級",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "With the notable exception of Norway, most countries have struggled with this issue.",
+      "band_level": 7
+    },
+    {
+      "id": "col_121",
+      "english": "a broad consensus on",
+      "chinese": "鍏充簬...鐨勫箍娉涘叡璇?",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "There is a broad consensus on the need to tackle climate change.",
+      "band_level": 7
+    },
+    {
+      "id": "col_122",
+      "english": "raise public awareness of",
+      "chinese": "鎻愰珮鍏紬瀵?..鐨勬剰璇?",
+      "function": "introducing_arguments",
+      "topic": "environment",
+      "example_sentence": "Campaigns should be launched to raise public awareness of recycling.",
+      "band_level": 7
+    },
+    {
+      "id": "col_123",
+      "english": "in isolation from",
+      "chinese": "鑴辩...锛屼笌...闅旂粷",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Environmental issues cannot be addressed in isolation from economic policies.",
+      "band_level": 7
+    },
+    {
+      "id": "col_124",
+      "english": "foster a culture of",
+      "chinese": "鍩瑰吇...鐨勬枃鍖?",
+      "function": "introducing_arguments",
+      "topic": "work",
+      "example_sentence": "Organizations should foster a culture of continuous learning.",
+      "band_level": 7
+    },
+    {
+      "id": "col_125",
+      "english": "in proportion to",
+      "chinese": "涓?..鎴愭瘮渚?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Taxation should be in proportion to one's ability to pay.",
+      "band_level": 7
+    },
+    {
+      "id": "col_126",
+      "english": "at a crossroads",
+      "chinese": "澶勫湪鍗佸瓧璺彛锛岄潰涓存妷鎷?",
+      "function": "introducing_arguments",
+      "topic": "general",
+      "example_sentence": "The world is at a crossroads in terms of energy policy.",
+      "band_level": 7
+    },
+    {
+      "id": "col_127",
+      "english": "in the interest of",
+      "chinese": "涓轰簡...鐨勫埄鐩?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "These measures are necessary in the interest of public safety.",
+      "band_level": 7
+    },
+    {
+      "id": "col_128",
+      "english": "compound the problem",
+      "chinese": "浣块棶棰樺鏉傚寲/鍔犲墽",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Rising unemployment compounds the problem of social inequality.",
+      "band_level": 7
+    },
+    {
+      "id": "col_129",
+      "english": "the silver lining is that",
+      "chinese": "濂界殑涓€闈㈡槸锛屼竴绾垮笇鏈涙槸",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "The silver lining is that the crisis has spurred innovation in renewable energy.",
+      "band_level": 7
+    },
+    {
+      "id": "col_130",
+      "english": "in a bid to",
+      "chinese": "涓轰簡锛岃瘯鍥?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "In a bid to reduce traffic, the city expanded its metro system.",
+      "band_level": 7
+    },
+    {
+      "id": "col_131",
+      "english": "such is the case with",
+      "chinese": "...涔熸槸濡傛",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "Such is the case with renewable energy, which has seen dramatic cost reductions.",
+      "band_level": 7
+    },
+    {
+      "id": "col_132",
+      "english": "a direct correlation between",
+      "chinese": "...涔嬮棿鐨勭洿鎺ュ叧鑱?",
+      "function": "showing_cause_effect",
+      "topic": "health",
+      "example_sentence": "There is a direct correlation between smoking and lung cancer.",
+      "band_level": 7
+    },
+    {
+      "id": "col_133",
+      "english": "take... by storm",
+      "chinese": "椋庨潯锛屽腑鍗?",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "Social media has taken the world by storm in the past decade.",
+      "band_level": 7
+    },
+    {
+      "id": "col_134",
+      "english": "be on the rise",
+      "chinese": "鍦ㄤ笂鍗囷紝鍦ㄥ闀?",
+      "function": "generalizing",
+      "topic": "crime",
+      "example_sentence": "Cybercrime is on the rise as more business is conducted online.",
+      "band_level": 7
+    },
+    {
+      "id": "col_135",
+      "english": "take... with a grain of salt",
+      "chinese": "瀵?..鎸佷繚鐣欐€佸害",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "Online reviews should be taken with a grain of salt.",
+      "band_level": 7
+    },
+    {
+      "id": "col_136",
+      "english": "in essence",
+      "chinese": "鏈川涓婏紝瀹炶川涓?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In essence, democracy is about giving power to the people.",
+      "band_level": 7
+    },
+    {
+      "id": "col_137",
+      "english": "serve as a catalyst for",
+      "chinese": "鍏呭綋...鐨勫偓鍖栧墏",
+      "function": "showing_cause_effect",
+      "topic": "technology",
+      "example_sentence": "The internet has served as a catalyst for social and political change.",
+      "band_level": 7
+    },
+    {
+      "id": "col_138",
+      "english": "a ripple effect on",
+      "chinese": "瀵?..浜х敓杩為攣鍙嶅簲",
+      "function": "showing_cause_effect",
+      "topic": "economy",
+      "example_sentence": "A downturn in manufacturing has a ripple effect on the entire economy.",
+      "band_level": 7
+    },
+    {
+      "id": "col_139",
+      "english": "governed by",
+      "chinese": "鍙?..鏀厤/绾︽潫",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "International trade is governed by a complex set of agreements.",
+      "band_level": 7
+    },
+    {
+      "id": "col_140",
+      "english": "not necessarily the case",
+      "chinese": "鏈繀濡傛",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "While many assume that wealth brings happiness, this is not necessarily the case.",
+      "band_level": 7
+    },
+    {
+      "id": "col_141",
+      "english": "cutting-edge technology",
+      "chinese": "灏栫鎶€鏈?",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "The company has invested heavily in cutting-edge technology.",
+      "band_level": 7
+    },
+    {
+      "id": "col_142",
+      "english": "be deeply embedded in",
+      "chinese": "娣辨繁妞嶆牴浜?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "Consumerism is deeply embedded in modern society.",
+      "band_level": 7
+    },
+    {
+      "id": "col_143",
+      "english": "in the realm of",
+      "chinese": "鍦?..棰嗗煙",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In the realm of public health, prevention is better than cure.",
+      "band_level": 7
+    },
+    {
+      "id": "col_144",
+      "english": "a dramatic surge in",
+      "chinese": "鎬ュ墽澧為暱",
+      "function": "emphasizing",
+      "topic": "health",
+      "example_sentence": "There has been a dramatic surge in the number of people diagnosed with diabetes.",
+      "band_level": 7
+    },
+    {
+      "id": "col_145",
+      "english": "at the core of",
+      "chinese": "鍦?..鐨勬牳蹇?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "At the core of this debate is the question of individual freedom versus collective responsibility.",
+      "band_level": 7
+    },
+    {
+      "id": "col_146",
+      "english": "break new ground in",
+      "chinese": "鍦?..鏂归潰寮€杈熸柊澶╁湴",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "The research team has broken new ground in cancer treatment.",
+      "band_level": 8
+    },
+    {
+      "id": "col_147",
+      "english": "as opposed to",
+      "chinese": "鑰屼笉鏄紝涓?..鐩稿弽",
+      "function": "showing_contrast",
+      "topic": "general",
+      "example_sentence": "Students should focus on understanding concepts as opposed to rote memorization.",
+      "band_level": 7
+    },
+    {
+      "id": "col_148",
+      "english": "as a consequence of",
+      "chinese": "鐢变簬...鐨勭粨鏋?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "As a consequence of globalization, cultural boundaries have become increasingly blurred.",
+      "band_level": 7
+    },
+    {
+      "id": "col_149",
+      "english": "a stark reminder that",
+      "chinese": "涓€涓弗閰风殑鎻愰啋",
+      "function": "emphasizing",
+      "topic": "environment",
+      "example_sentence": "The recent floods serve as a stark reminder that climate change is real.",
+      "band_level": 7
+    },
+    {
+      "id": "col_150",
+      "english": "in all walks of life",
+      "chinese": "鍦ㄥ悇琛屽悇涓氾紝鍦ㄥ悇棰嗗煙",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Technology has permeated almost all walks of life.",
+      "band_level": 7
+    },
+    {
+      "id": "col_151",
+      "english": "the vast majority of",
+      "chinese": "缁濆ぇ澶氭暟",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "The vast majority of students benefit from extracurricular activities.",
+      "band_level": 7
+    },
+    {
+      "id": "col_152",
+      "english": "irrespective of",
+      "chinese": "涓嶈锛屼笉椤?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Healthcare should be accessible to all, irrespective of their income.",
+      "band_level": 7
+    },
+    {
+      "id": "col_153",
+      "english": "with the advent of",
+      "chinese": "闅忕潃...鐨勫嚭鐜?",
+      "function": "showing_cause_effect",
+      "topic": "technology",
+      "example_sentence": "With the advent of artificial intelligence, many jobs are being automated.",
+      "band_level": 7
+    },
+    {
+      "id": "col_154",
+      "english": "be well documented that",
+      "chinese": "鏈夊厖鍒嗚瘉鎹〃鏄?",
+      "function": "introducing_arguments",
+      "topic": "health",
+      "example_sentence": "It is well documented that a sedentary lifestyle increases the risk of heart disease.",
+      "band_level": 7
+    },
+    {
+      "id": "col_155",
+      "english": "in the wake of industrialization",
+      "chinese": "鍦ㄥ伐涓氬寲涔嬪悗",
+      "function": "showing_cause_effect",
+      "topic": "environment",
+      "example_sentence": "In the wake of industrialization, air quality in many cities has deteriorated.",
+      "band_level": 7
+    },
+    {
+      "id": "col_156",
+      "english": "a contributing factor to",
+      "chinese": "淇冩垚鍥犵礌",
+      "function": "showing_cause_effect",
+      "topic": "crime",
+      "example_sentence": "Unemployment is a contributing factor to the rise in crime rates.",
+      "band_level": 7
+    },
+    {
+      "id": "col_157",
+      "english": "in a nutshell",
+      "chinese": "绠€鑰岃█涔?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "In a nutshell, the benefits of exercise extend far beyond physical health.",
+      "band_level": 7
+    },
+    {
+      "id": "col_158",
+      "english": "as a rule of thumb",
+      "chinese": "鏍规嵁缁忛獙娉曞垯",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "As a rule of thumb, the earlier a disease is detected, the better the prognosis.",
+      "band_level": 7
+    },
+    {
+      "id": "col_159",
+      "english": "be bombarded with",
+      "chinese": "琚ぇ閲?..杞扮偢/娣规病",
+      "function": "emphasizing",
+      "topic": "technology",
+      "example_sentence": "Consumers are bombarded with advertisements on social media.",
+      "band_level": 7
+    },
+    {
+      "id": "col_160",
+      "english": "a fundamental shift in",
+      "chinese": "...鐨勬牴鏈浆鍙?",
+      "function": "emphasizing",
+      "topic": "work",
+      "example_sentence": "The gig economy represents a fundamental shift in employment patterns.",
+      "band_level": 7
+    },
+    {
+      "id": "col_161",
+      "english": "from an economic standpoint",
+      "chinese": "浠庣粡娴庤搴︽潵鐪?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "From an economic standpoint, investing in education yields substantial returns.",
+      "band_level": 7
+    },
+    {
+      "id": "col_162",
+      "english": "gain traction",
+      "chinese": "鑾峰緱鏀寔/鍔垮ご",
+      "function": "generalizing",
+      "topic": "technology",
+      "example_sentence": "Electric vehicles are gaining traction in many developed countries.",
+      "band_level": 7
+    },
+    {
+      "id": "col_163",
+      "english": "turn a blind eye to",
+      "chinese": "瀵?..瑙嗚€屼笉瑙?",
+      "function": "expressing_opinion",
+      "topic": "crime",
+      "example_sentence": "Authorities should not turn a blind eye to corporate tax evasion.",
+      "band_level": 7
+    },
+    {
+      "id": "col_164",
+      "english": "be tantamount to",
+      "chinese": "绛夊悓浜?",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "Ignoring climate change is tantamount to negligence toward future generations.",
+      "band_level": 8
+    },
+    {
+      "id": "col_165",
+      "english": "in the broader context of",
+      "chinese": "鍦ㄦ洿骞挎硾鐨?..鑳屾櫙涓?",
+      "function": "clarifying",
+      "topic": "globalization",
+      "example_sentence": "In the broader context of globalization, migration is an inevitable phenomenon.",
+      "band_level": 7
+    },
+    {
+      "id": "col_166",
+      "english": "the underlying causes of",
+      "chinese": "...鐨勬牴鏈師鍥?",
+      "function": "showing_cause_effect",
+      "topic": "general",
+      "example_sentence": "Policymakers must address the underlying causes of poverty.",
+      "band_level": 7
+    },
+    {
+      "id": "col_167",
+      "english": "throughout the course of",
+      "chinese": "鍦?..鐨勬暣涓繃绋嬩腑",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "Throughout the course of human history, technology has shaped civilization.",
+      "band_level": 7
+    },
+    {
+      "id": "col_168",
+      "english": "what matters most is",
+      "chinese": "鏈€閲嶈鐨勬槸",
+      "function": "emphasizing",
+      "topic": "general",
+      "example_sentence": "What matters most is not the quantity of education but its quality.",
+      "band_level": 7
+    },
+    {
+      "id": "col_169",
+      "english": "not only... but also",
+      "chinese": "涓嶄粎...鑰屼笖",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Reading not only improves vocabulary but also enhances critical thinking skills.",
+      "band_level": 7
+    },
+    {
+      "id": "col_170",
+      "english": "in addition to",
+      "chinese": "闄?..涔嬪锛堣繕锛?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "In addition to academic skills, schools should teach life skills.",
+      "band_level": 7
+    },
+    {
+      "id": "col_171",
+      "english": "furthermore",
+      "chinese": "姝ゅ锛岃€屼笖",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Furthermore, exercise has been shown to improve mental health.",
+      "band_level": 7
+    },
+    {
+      "id": "col_172",
+      "english": "coupled with",
+      "chinese": "鍔犱笂锛岀粨鍚?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Rising populations, coupled with urbanization, place immense pressure on resources.",
+      "band_level": 7
+    },
+    {
+      "id": "col_173",
+      "english": "to put it another way",
+      "chinese": "鎹㈠彞璇濊",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "To put it another way, education is an investment in human capital.",
+      "band_level": 7
+    },
+    {
+      "id": "col_174",
+      "english": "in other words",
+      "chinese": "鎹㈣█涔?",
+      "function": "clarifying",
+      "topic": "general",
+      "example_sentence": "In other words, the policy was a failure from the start.",
+      "band_level": 7
+    },
+    {
+      "id": "col_175",
+      "english": "to sum up",
+      "chinese": "鎬荤粨涓€涓?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "To sum up, the advantages of renewable energy far outweigh its drawbacks.",
+      "band_level": 7
+    },
+    {
+      "id": "col_176",
+      "english": "in conclusion",
+      "chinese": "鎬讳箣锛屾渶鍚?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "In conclusion, while technology has its drawbacks, its benefits are undeniable.",
+      "band_level": 7
+    },
+    {
+      "id": "col_177",
+      "english": "taking everything into consideration",
+      "chinese": "缁煎悎鑰冭檻鍚勬柟闈㈠洜绱?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "Taking everything into consideration, I believe that the merits of this proposal are clear.",
+      "band_level": 7
+    },
+    {
+      "id": "col_178",
+      "english": "all things considered",
+      "chinese": "缁艰鍏ㄥ眬",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "All things considered, a balanced approach is the most sensible way forward.",
+      "band_level": 7
+    },
+    {
+      "id": "col_179",
+      "english": "ultimately",
+      "chinese": "鏈€缁堬紝鏍规湰涓?",
+      "function": "concluding",
+      "topic": "general",
+      "example_sentence": "Ultimately, it is the responsibility of individuals to make ethical choices.",
+      "band_level": 7
+    },
+    {
+      "id": "col_180",
+      "english": "for instance",
+      "chinese": "渚嬪",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "For instance, countries like Denmark have successfully transitioned to wind power.",
+      "band_level": 7
+    },
+    {
+      "id": "col_181",
+      "english": "a prime example of",
+      "chinese": "涓€涓吀鍨嬬殑渚嬪瓙",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "Japan's bullet train is a prime example of engineering excellence.",
+      "band_level": 7
+    },
+    {
+      "id": "col_182",
+      "english": "to illustrate this point",
+      "chinese": "涓轰簡璇存槑杩欎竴鐐?",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "To illustrate this point, consider the case of South Korea's economic development.",
+      "band_level": 7
+    },
+    {
+      "id": "col_183",
+      "english": "as evidenced by",
+      "chinese": "濡?..鎵€璇佹槑鐨?",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "Air pollution is a serious health risk, as evidenced by rising asthma rates.",
+      "band_level": 7
+    },
+    {
+      "id": "col_184",
+      "english": "this can be seen in",
+      "chinese": "杩欎竴鐐瑰彲浠ヤ粠...鐪嬪嚭",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "This can be seen in the rapid adoption of electric vehicles in Norway.",
+      "band_level": 7
+    },
+    {
+      "id": "col_185",
+      "english": "take... as an example",
+      "chinese": "浠?..涓轰緥",
+      "function": "giving_examples",
+      "topic": "education",
+      "example_sentence": "Take Finland as an example: its education system consistently ranks among the best globally.",
+      "band_level": 7
+    },
+    {
+      "id": "col_186",
+      "english": "as an illustration",
+      "chinese": "浣滀负渚嬭瘉",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "As an illustration, the recycling rate in Germany exceeds 60 percent.",
+      "band_level": 7
+    },
+    {
+      "id": "col_187",
+      "english": "by way of illustration",
+      "chinese": "浣滀负璇存槑",
+      "function": "giving_examples",
+      "topic": "general",
+      "example_sentence": "By way of illustration, let us consider the healthcare system in Canada.",
+      "band_level": 7
+    },
+    {
+      "id": "col_188",
+      "english": "one striking example is",
+      "chinese": "涓€涓紩浜烘敞鐩殑渚嬪瓙鏄?",
+      "function": "giving_examples",
+      "topic": "technology",
+      "example_sentence": "One striking example is how smartphones have transformed banking in Africa.",
+      "band_level": 7
+    },
+    {
+      "id": "col_189",
+      "english": "aside from",
+      "chinese": "闄や簡...涔嬪",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Aside from economic benefits, tourism promotes cultural exchange.",
+      "band_level": 7
+    },
+    {
+      "id": "col_190",
+      "english": "over and above",
+      "chinese": "闄?..涔嬪锛堣繕锛?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "Over and above the health benefits, cycling reduces traffic congestion.",
+      "band_level": 7
+    },
+    {
+      "id": "col_191",
+      "english": "what is more",
+      "chinese": "鏇撮噸瑕佺殑鏄?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "What is more, renewable energy creates more jobs than fossil fuel industries.",
+      "band_level": 7
+    },
+    {
+      "id": "col_192",
+      "english": "in the same vein",
+      "chinese": "鍚屾牱鍦?",
+      "function": "adding_information",
+      "topic": "general",
+      "example_sentence": "In the same vein, public transport should be made more affordable.",
+      "band_level": 7
+    },
+    {
+      "id": "col_193",
+      "english": "broadly speaking",
+      "chinese": "骞夸箟鍦拌",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "Broadly speaking, there are two approaches to solving this problem.",
+      "band_level": 7
+    },
+    {
+      "id": "col_194",
+      "english": "as a general rule",
+      "chinese": "涓€鑸€岃█",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "As a general rule, prevention is more cost-effective than treatment.",
+      "band_level": 7
+    },
+    {
+      "id": "col_195",
+      "english": "on the whole",
+      "chinese": "鎬荤殑鏉ヨ",
+      "function": "generalizing",
+      "topic": "general",
+      "example_sentence": "On the whole, people are becoming more environmentally conscious.",
+      "band_level": 7
+    },
+    {
+      "id": "col_196",
+      "english": "I am firmly of the opinion that",
+      "chinese": "鎴戝潥瀹氬湴璁や负",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "I am firmly of the opinion that education should be free for all.",
+      "band_level": 7
+    },
+    {
+      "id": "col_197",
+      "english": "from my standpoint",
+      "chinese": "浠庢垜鐨勭珛鍦?瑙傜偣鏉ョ湅",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "From my standpoint, the government has a duty to protect vulnerable citizens.",
+      "band_level": 7
+    },
+    {
+      "id": "col_198",
+      "english": "I am inclined to believe that",
+      "chinese": "鎴戝€惧悜浜庤涓?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "I am inclined to believe that remote work will become the norm.",
+      "band_level": 7
+    },
+    {
+      "id": "col_199",
+      "english": "it is my conviction that",
+      "chinese": "鎴戞繁淇?",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "It is my conviction that every child deserves access to quality education.",
+      "band_level": 7
+    },
+    {
+      "id": "col_200",
+      "english": "I would argue that",
+      "chinese": "鎴戣涓?涓诲紶",
+      "function": "expressing_opinion",
+      "topic": "general",
+      "example_sentence": "I would argue that prevention is better than cure in healthcare.",
+      "band_level": 7
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "description": "IELTS Writing Task 2 test question bank for harness evaluation",
+  "version": "1.0",
+  "total_questions": 20,
+  "questions": [
+    {
+      "id": "edu_001",
+      "question": "Some people believe that university education should be free for everyone. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["education", "government"],
+      "difficulty": "easy",
+      "key_arguments": ["economic feasibility", "societal benefit", "individual responsibility", "quality of education"]
+    },
+    {
+      "id": "edu_002",
+      "question": "In many countries, students attend private tutoring after school. What are the causes of this trend? Is this a positive or negative development?",
+      "question_type": "two_part",
+      "topics": ["education"],
+      "difficulty": "medium",
+      "key_arguments": ["academic pressure", "education inequality", "parental anxiety", "supplementary learning"]
+    },
+    {
+      "id": "edu_003",
+      "question": "Some people think that children should begin their formal education at a very early age. Others believe they should spend more time playing. Discuss both views and give your opinion.",
+      "question_type": "discussion",
+      "topics": ["education"],
+      "difficulty": "easy",
+      "key_arguments": ["early development", "play-based learning", "cognitive readiness", "social skills"]
+    },
+    {
+      "id": "tech_001",
+      "question": "The increasing use of social media is replacing face-to-face interaction in everyday life. Do the advantages outweigh the disadvantages?",
+      "question_type": "advantages_disadvantages",
+      "topics": ["technology"],
+      "difficulty": "easy",
+      "key_arguments": ["social connection", "mental health", "communication skills", "convenience"]
+    },
+    {
+      "id": "tech_002",
+      "question": "Artificial intelligence will eventually replace most human jobs. What problems might this cause, and what solutions can you suggest?",
+      "question_type": "problem_solution",
+      "topics": ["technology", "work"],
+      "difficulty": "medium",
+      "key_arguments": ["job displacement", "reskilling", "universal basic income", "human-AI collaboration"]
+    },
+    {
+      "id": "tech_003",
+      "question": "Some people believe that technological developments have made our lives more complicated. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["technology"],
+      "difficulty": "medium",
+      "key_arguments": ["convenience vs complexity", "information overload", "work-life balance", "digital divide"]
+    },
+    {
+      "id": "env_001",
+      "question": "Climate change is the biggest threat facing humanity today. What measures can governments and individuals take to address this problem?",
+      "question_type": "problem_solution",
+      "topics": ["environment"],
+      "difficulty": "easy",
+      "key_arguments": ["carbon emissions", "renewable energy", "individual lifestyle changes", "international cooperation"]
+    },
+    {
+      "id": "env_002",
+      "question": "Some people argue that economic growth is more important than environmental protection. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["environment", "globalization"],
+      "difficulty": "medium",
+      "key_arguments": ["sustainable development", "short-term vs long-term", "green technology", "developing nations"]
+    },
+    {
+      "id": "crime_001",
+      "question": "Some people believe that the best way to reduce crime is to give longer prison sentences. Others think there are better ways to reduce crime. Discuss both views and give your opinion.",
+      "question_type": "discussion",
+      "topics": ["crime"],
+      "difficulty": "easy",
+      "key_arguments": ["deterrence", "rehabilitation", "root causes", "education and employment"]
+    },
+    {
+      "id": "crime_002",
+      "question": "Young people who commit serious crimes should be punished in the same way as adults. Do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["crime"],
+      "difficulty": "medium",
+      "key_arguments": ["brain development", "rehabilitation potential", "public safety", "legal responsibility"]
+    },
+    {
+      "id": "health_001",
+      "question": "In many countries, people are living longer than ever before. What problems does this cause? What can be done to address these problems?",
+      "question_type": "problem_solution",
+      "topics": ["health", "work"],
+      "difficulty": "easy",
+      "key_arguments": ["aging population", "healthcare burden", "retirement age", "social care systems"]
+    },
+    {
+      "id": "health_002",
+      "question": "Some people believe that governments should ban unhealthy food to improve public health. Others think individuals should be responsible for their own diet. Discuss both views.",
+      "question_type": "discussion",
+      "topics": ["health", "government"],
+      "difficulty": "medium",
+      "key_arguments": ["personal freedom", "public health costs", "education vs regulation", "food industry influence"]
+    },
+    {
+      "id": "transport_001",
+      "question": "Some people think governments should invest more in public transport rather than roads. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["transport"],
+      "difficulty": "easy",
+      "key_arguments": ["traffic congestion", "environmental impact", "accessibility", "cost-effectiveness"]
+    },
+    {
+      "id": "transport_002",
+      "question": "In many cities, the use of private cars is increasing rapidly. What problems does this cause, and how can they be solved?",
+      "question_type": "problem_solution",
+      "topics": ["transport", "environment"],
+      "difficulty": "easy",
+      "key_arguments": ["air pollution", "traffic congestion", "public transport investment", "car-sharing"]
+    },
+    {
+      "id": "work_001",
+      "question": "More and more people are choosing to work from home rather than in an office. Do you think this is a positive or negative development?",
+      "question_type": "advantages_disadvantages",
+      "topics": ["work", "technology"],
+      "difficulty": "easy",
+      "key_arguments": ["work-life balance", "productivity", "social isolation", "collaboration"]
+    },
+    {
+      "id": "work_002",
+      "question": "Some people think that job satisfaction is more important than a high salary. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["work"],
+      "difficulty": "easy",
+      "key_arguments": ["motivation", "quality of life", "financial security", "career fulfillment"]
+    },
+    {
+      "id": "global_001",
+      "question": "Globalization is creating a world with a single culture and destroying national identities. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["globalization"],
+      "difficulty": "medium",
+      "key_arguments": ["cultural homogenization", "cultural exchange", "local traditions", "global media"]
+    },
+    {
+      "id": "global_002",
+      "question": "International tourism has brought enormous benefits to many places. However, there are concerns about its impact on local communities and the environment. Do the advantages outweigh the disadvantages?",
+      "question_type": "advantages_disadvantages",
+      "topics": ["globalization", "environment"],
+      "difficulty": "medium",
+      "key_arguments": ["economic benefits", "cultural exchange", "environmental damage", "local displacement"]
+    },
+    {
+      "id": "global_003",
+      "question": "More and more businesses are becoming multinational. What are the advantages and disadvantages of this trend?",
+      "question_type": "advantages_disadvantages",
+      "topics": ["globalization", "work"],
+      "difficulty": "easy",
+      "key_arguments": ["economic growth", "job creation", "local business impact", "cultural diversity at work"]
+    },
+    {
+      "id": "mixed_001",
+      "question": "Some people believe that advertising has a negative effect on society and should be controlled more strictly. To what extent do you agree or disagree?",
+      "question_type": "opinion",
+      "topics": ["technology", "globalization"],
+      "difficulty": "medium",
+      "key_arguments": ["consumer manipulation", "informed choice", "freedom of speech", "regulatory balance"]
+    }
+  ]
+}

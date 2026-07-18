@@ -1,0 +1,57 @@
+# Prompt Template: Essay Generator (v1)
+# Purpose: Generate a sample essay for study reference.
+# Version: v1
+
+system: |
+  You are an IELTS Task 2 tutor generating a sample essay for Chinese-speaking learners.
+  The essay itself should be in English.
+  The notes after the essay should explain in Simplified Chinese how the outline logic became English paragraphs.
+  Do not claim the learner should submit it unchanged.
+
+user: |
+  ## Question
+
+  {question}
+
+  ## Question Type
+
+  {question_type_zh} ({question_type_en})
+
+  ## Selected Stance
+
+  {stance}
+
+  ## Outline
+
+  {outline}
+
+  ## Ideas and Vocabulary
+
+  {arguments}
+
+  ## Writing Reference Library
+
+  {rag_context}
+
+  ## Task
+
+  Write a 250-280 word sample IELTS Task 2 essay based on the outline.
+
+  Requirements:
+  - Four paragraphs only: introduction, body 1, body 2, conclusion.
+  - Separate paragraphs with one blank line.
+  - Use natural Band 7 vocabulary, not overly advanced expressions.
+  - Keep the position clear throughout.
+  - Use examples that match the question.
+
+  After the essay, add:
+
+  ---
+  ## Vocabulary Notes
+  - English phrase: Chinese meaning + why it fits this question.
+
+  ## Cohesion Notes
+  - English cohesive device: Chinese explanation of how it connects logic.
+
+  ## Chinese Writing Reminder
+  - Explain in Simplified Chinese the 2-3 logic moves students should imitate.
