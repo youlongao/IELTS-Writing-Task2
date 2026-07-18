@@ -8,51 +8,31 @@ This product is not a generic essay chatbot and not a ghostwriter. It is designe
 to help learners understand how to think, develop arguments, organize a
 four-paragraph essay, and improve Task Response and Coherence over time.
 
-## Screenshots
+## Feature Preview
 
-Screenshots are stored in `docs/screenshots/`.
-
-### Question Analysis
-
-Path: `docs/screenshots/question analysis1.png`
+### Question Analysis: Type, Topic, and Core Issue
 
 ![Question analysis screenshot 1](docs/screenshots/question%20analysis1.png)
 
-Path: `docs/screenshots/question analysis2.png`
-
 ![Question analysis screenshot 2](docs/screenshots/question%20analysis2.png)
-
-Path: `docs/screenshots/question analysis3.png`
 
 ![Question analysis screenshot 3](docs/screenshots/question%20analysis3.png)
 
-### Writable Ideas and Argument Chains
-
-Path: `docs/screenshots/opinions1.png`
+### Opinions: Writable Ideas and Argument Chains
 
 ![Writable ideas and argument chains screenshot 1](docs/screenshots/opinions1.png)
 
-Path: `docs/screenshots/opinions2.png`
-
 ![Writable ideas and argument chains screenshot 2](docs/screenshots/opinions2.png)
-
-Path: `docs/screenshots/opinions3.png`
 
 ![Writable ideas and argument chains screenshot 3](docs/screenshots/opinions3.png)
 
-### Suggested Outline
-
-Path: `docs/screenshots/outline1.png`
+### Outline Builder: Suggested Four-Paragraph Plan
 
 ![Suggested outline screenshot 1](docs/screenshots/outline1.png)
 
-Path: `docs/screenshots/outline2.png`
-
 ![Suggested outline screenshot 2](docs/screenshots/outline2.png)
 
-### Writing Tips
-
-Path: `docs/screenshots/writing tips.png`
+### Writing Tips: Paragraph-Level Reminders
 
 ![Writing tips screenshot](docs/screenshots/writing%20tips.png)
 
@@ -259,51 +239,31 @@ Practice by topic:
 - 如何搭建四段式作文结构
 - 如何根据 IELTS 标准检查自己的作文
 
-## 模块截图
+## 功能预览
 
-截图文件放在 `docs/screenshots/` 目录。
-
-### 题目拆解
-
-路径：`docs/screenshots/question analysis1.png`
+### 题目拆解：题型、话题与核心问题
 
 ![题目拆解截图 1](docs/screenshots/question%20analysis1.png)
 
-路径：`docs/screenshots/question analysis2.png`
-
 ![题目拆解截图 2](docs/screenshots/question%20analysis2.png)
-
-路径：`docs/screenshots/question analysis3.png`
 
 ![题目拆解截图 3](docs/screenshots/question%20analysis3.png)
 
-### 可写观点与论证链
-
-路径：`docs/screenshots/opinions1.png`
+### 观点生成：可写观点与论证链
 
 ![可写观点与论证链截图 1](docs/screenshots/opinions1.png)
 
-路径：`docs/screenshots/opinions2.png`
-
 ![可写观点与论证链截图 2](docs/screenshots/opinions2.png)
-
-路径：`docs/screenshots/opinions3.png`
 
 ![可写观点与论证链截图 3](docs/screenshots/opinions3.png)
 
-### 建议大纲
-
-路径：`docs/screenshots/outline1.png`
+### 大纲生成：四段式建议大纲
 
 ![建议大纲截图 1](docs/screenshots/outline1.png)
 
-路径：`docs/screenshots/outline2.png`
-
 ![建议大纲截图 2](docs/screenshots/outline2.png)
 
-### 写作提示
-
-路径：`docs/screenshots/writing tips.png`
+### 写作提示：段落任务提醒
 
 ![写作提示截图](docs/screenshots/writing%20tips.png)
 
