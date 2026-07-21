@@ -3,7 +3,7 @@
 from unittest.mock import Mock
 
 from src.agent.scenarios import ScenarioRouter
-from src.agent.state import QuestionAnalysis, Scenario, WorkflowState
+from src.agent.state import EssayOutline, QuestionAnalysis, Scenario, WorkflowState
 from src.agent.workflow import AgentWorkflow
 
 
@@ -177,3 +177,27 @@ class TestAgentWorkflow:
         prompt = mock_llm.generate.call_args.args[0]
         assert "Student Essay" in prompt
         assert "Actual Band Estimate" in prompt
+
+    def test_generate_sample_essay_uses_essay_generator_prompt(self):
+        mock_llm = Mock()
+        mock_llm.model_name = "test-model"
+        mock_llm.generate.return_value = "Sample essay."
+
+        workflow = AgentWorkflow(llm=mock_llm, retriever=None)
+        state = WorkflowState(
+            user_input="Should university be free?",
+            scenario=Scenario.GENERATE,
+        )
+        state.analysis = QuestionAnalysis(
+            question_type_zh="观点类",
+            question_type_en="Opinion Essay",
+        )
+        state.outline = EssayOutline()
+        state.outline.tips = ["Introduction, Body 1, Body 2, Conclusion."]
+
+        result = workflow.generate_sample_essay(state)
+
+        assert result == "Sample essay."
+        prompt = mock_llm.generate.call_args.args[0]
+        assert "Write a 250-280 word sample IELTS Task 2 essay" in prompt
+        assert state.trace["final_prompt_stage"] == "essay_generator"

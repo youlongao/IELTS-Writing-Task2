@@ -43,6 +43,7 @@ class AgentWorkflow:
 
     def run(self, state: WorkflowState) -> WorkflowState:
         logger.info("Starting workflow: %s", state.scenario.value)
+        state.trace.setdefault("prompt_calls", [])
 
         try:
             state = self._step_1_analyze_question(state)
@@ -69,6 +70,7 @@ class AgentWorkflow:
         try:
             prompt = self.prompts.get("question_analyzer", state.prompt_version)
             rendered = prompt.render(question=state.user_input)
+            self._record_prompt(state, "question_analyzer", rendered)
             response = self.llm.generate(
                 rendered["user"],
                 system_message=rendered["system"],
@@ -98,6 +100,7 @@ class AgentWorkflow:
         question_type = state.analysis.question_type if state.analysis else "opinion"
 
         if not self.retriever:
+            state.trace["retrieval_query"] = state.user_input
             vocab_context = self.collocations.format_for_prompt(topic, limit=15)
             structure_context = self.structures.format_for_prompt(question_type)
             state.rag_context = self._fallback_context(structure_context, vocab_context)
@@ -108,6 +111,7 @@ class AgentWorkflow:
             query = state.user_input
             if state.analysis and state.analysis.controversy:
                 query = f"{state.analysis.controversy}\n{state.user_input}"
+            state.trace["retrieval_query"] = query
             results = self.retriever.retrieve(
                 query=query,
                 topic=topic,
@@ -141,6 +145,7 @@ class AgentWorkflow:
                 stance_sections=self._build_stance_sections(state),
                 rag_context=state.rag_context,
             )
+            self._record_prompt(state, "idea_generator", rendered)
             response = self.llm.generate(
                 rendered["user"],
                 system_message=rendered["system"],
@@ -179,6 +184,7 @@ Return:
 6. Useful vocabulary: English phrase + Chinese meaning
 """
         try:
+            self._record_prompt(state, "idea_deepener", {"system": "", "user": prompt})
             response = self.llm.generate(prompt, temperature=0.5, max_tokens=1500)
             state.arguments = self._parse_arguments(response)
         except Exception as exc:
@@ -218,6 +224,7 @@ Suggestions:
 - ...
 """
         try:
+            self._record_prompt(state, "outline_evaluator", {"system": "", "user": prompt})
             response = self.llm.generate(prompt, temperature=0.3, max_tokens=1200)
             state.evaluation = self._parse_evaluation(response)
         except Exception as exc:
@@ -242,6 +249,7 @@ Suggestions:
                 arguments=self._format_arguments_for_outline(state.arguments),
                 rag_context=state.rag_context,
             )
+            self._record_prompt(state, "outline_builder", rendered)
             response = self.llm.generate(
                 rendered["user"],
                 system_message=rendered["system"],
@@ -270,11 +278,38 @@ Suggestions:
             outline=outline,
             rag_context=rag_context,
         )
+        # This helper returns raw text and does not carry WorkflowState.
         return self.llm.generate(
             rendered["user"],
             system_message=rendered["system"],
             temperature=0.3,
             max_tokens=2200,
+        )
+
+    def generate_sample_essay(
+        self,
+        state: WorkflowState,
+        stance: str = "A clear, task-appropriate position",
+        prompt_version: str = "v1",
+    ) -> str:
+        """Generate the study sample essay used by the web app and harness."""
+        prompt = self.prompts.get("essay_generator", prompt_version)
+        analysis = state.analysis
+        rendered = prompt.render(
+            question=state.user_input,
+            question_type_zh=analysis.question_type_zh if analysis else "",
+            question_type_en=analysis.question_type_en if analysis else "",
+            stance=state.selected_stance or stance,
+            outline=state.outline.tips[0] if state.outline and state.outline.tips else "",
+            arguments=self._format_arguments_for_outline(state.arguments),
+            rag_context=state.rag_context,
+        )
+        self._record_prompt(state, "essay_generator", rendered)
+        return self.llm.generate(
+            rendered["user"],
+            system_message=rendered["system"],
+            temperature=0.7,
+            max_tokens=4096,
         )
 
     @staticmethod
@@ -283,6 +318,16 @@ Suggestions:
         if parts:
             return "\n\n".join(parts)
         return "No local writing reference was available. Use general IELTS Task 2 standards."
+
+    @staticmethod
+    def _record_prompt(state: WorkflowState, stage: str, rendered: dict):
+        state.trace.setdefault("prompt_calls", []).append({
+            "stage": stage,
+            "system_prompt": rendered.get("system", ""),
+            "user_prompt": rendered.get("user", ""),
+        })
+        state.trace["final_prompt_stage"] = stage
+        state.trace["final_prompt"] = rendered.get("user", "")
 
     @staticmethod
     def _build_stance_sections(state: WorkflowState) -> str:

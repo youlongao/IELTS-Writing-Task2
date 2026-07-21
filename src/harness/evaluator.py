@@ -2,7 +2,7 @@
 
 import logging
 import time
-from typing import Dict, List, Optional
+from typing import Callable, Dict, List, Optional
 
 from ..llm.base import LLMProvider
 from .metrics import MetricsCalculator, MetricScores
@@ -76,14 +76,20 @@ class Evaluator:
                 scores[metric] = 0.0
                 comments[metric] = f"Evaluation error: {e}"
 
-        # Calculate specificity score (automated)
+        official_scores = {
+            metric: scores[metric]
+            for metric in MetricsCalculator.IELTS_CRITERIA
+            if metric in scores
+        }
+
+        # Calculate specificity score (automated diagnostic)
         scores["specificity_score"] = self._calculate_specificity(output)
 
-        # Calculate band alignment (automated)
-        scores["band_alignment"] = self._calculate_band_alignment(scores)
+        # Calculate band alignment (diagnostic; not part of overall)
+        scores["band_alignment"] = self._calculate_band_alignment(official_scores)
 
-        # Overall score
-        overall = MetricsCalculator.calculate_overall(scores)
+        # Overall score follows the four official IELTS criteria only.
+        overall = MetricsCalculator.calculate_overall(official_scores)
 
         return MetricScores(
             task_response=scores.get("task_response", 0.0),
@@ -156,15 +162,38 @@ class Evaluator:
 
             try:
                 output = output_getter(case["question"])
+                generation_trace = getattr(output_getter, "last_trace", {})
+                if hasattr(self.judge, "reset_usage"):
+                    self.judge.reset_usage()
                 scores = self.evaluate(case["question"], output)
                 latency = time.time() - start_time
+                score_dict = scores.to_dict()
+                judge_usage = getattr(self.judge, "usage_total", {})
 
                 results.append({
                     "test_case_id": case.get("id", f"case_{i}"),
+                    "harness_target": generation_trace.get("harness_target", "sample_essay"),
+                    "input_source": case.get("source", "local_test_case_bank"),
+                    "user_input": case["question"],
                     "question": case["question"],
+                    "retrieval_query": generation_trace.get("retrieval_query", ""),
+                    "recalled_chunks": generation_trace.get("recalled_chunks", []),
+                    "final_prompt": generation_trace.get("final_prompt", ""),
+                    "prompt_calls": generation_trace.get("prompt_calls", []),
                     "output": output[:500],
-                    "scores": scores.to_dict(),
+                    "model_output": output,
+                    "scores": score_dict,
+                    "scoring_result": score_dict,
+                    "error_labels": self._label_errors(score_dict, generation_trace),
                     "latency_seconds": round(latency, 2),
+                    "token_usage": {
+                        "generation": generation_trace.get("token_usage", {}),
+                        "judge": judge_usage,
+                    },
+                    "model_versions": {
+                        "generation": generation_trace.get("model_name", ""),
+                        "judge": getattr(self.judge, "model_name", ""),
+                    },
                     "error": None,
                 })
 
@@ -172,10 +201,107 @@ class Evaluator:
                 logger.error(f"Failed on test case {case.get('id', 'unknown')}: {e}")
                 results.append({
                     "test_case_id": case.get("id", f"case_{i}"),
+                    "harness_target": "sample_essay",
+                    "input_source": case.get("source", "local_test_case_bank"),
+                    "user_input": case.get("question", ""),
                     "question": case.get("question", ""),
+                    "retrieval_query": "",
+                    "recalled_chunks": [],
+                    "final_prompt": "",
+                    "prompt_calls": [],
                     "output": "",
+                    "model_output": "",
                     "scores": MetricScores().to_dict(),
+                    "scoring_result": MetricScores().to_dict(),
+                    "error_labels": ["runtime_error"],
                     "latency_seconds": 0,
+                    "token_usage": {},
+                    "model_versions": {},
+                    "error": str(e),
+                })
+
+        return results
+
+    @staticmethod
+    def batch_rule_evaluate(
+        test_cases: List[Dict],
+        output_getter: Callable[[str], str],
+    ) -> List[Dict]:
+        """Generate outputs and run deterministic checks only.
+
+        This mode is useful for quick smoke/regression tests because it does
+        not call an LLM judge. It still calls the selected generation provider.
+        """
+        results = []
+
+        for i, case in enumerate(test_cases):
+            logger.info(
+                f"Rule-evaluating case {i + 1}/{len(test_cases)}: {case.get('id', 'unknown')}"
+            )
+            start_time = time.time()
+
+            try:
+                output = output_getter(case["question"])
+                generation_trace = getattr(output_getter, "last_trace", {})
+                rule_result = Evaluator.rule_evaluate(case["question"], output)
+                latency = time.time() - start_time
+                score_dict = {
+                    "specificity_score": Evaluator._calculate_specificity(output),
+                    "overall": rule_result["score"],
+                    "rule_score": rule_result["score"],
+                    "rule_passed": rule_result["passed"],
+                    "rule_total": rule_result["total"],
+                    "rule_checks": rule_result["checks"],
+                    "comments": {},
+                }
+
+                results.append({
+                    "test_case_id": case.get("id", f"case_{i}"),
+                    "harness_target": generation_trace.get("harness_target", "sample_essay"),
+                    "input_source": case.get("source", "local_test_case_bank"),
+                    "user_input": case["question"],
+                    "question": case["question"],
+                    "retrieval_query": generation_trace.get("retrieval_query", ""),
+                    "recalled_chunks": generation_trace.get("recalled_chunks", []),
+                    "final_prompt": generation_trace.get("final_prompt", ""),
+                    "prompt_calls": generation_trace.get("prompt_calls", []),
+                    "output": output[:500],
+                    "model_output": output,
+                    "scores": score_dict,
+                    "scoring_result": score_dict,
+                    "error_labels": Evaluator._label_rule_errors(rule_result),
+                    "latency_seconds": round(latency, 2),
+                    "token_usage": {
+                        "generation": generation_trace.get("token_usage", {}),
+                        "judge": {},
+                    },
+                    "model_versions": {
+                        "generation": generation_trace.get("model_name", ""),
+                        "judge": "",
+                    },
+                    "error": None,
+                })
+
+            except Exception as e:
+                logger.error(f"Failed on test case {case.get('id', 'unknown')}: {e}")
+                results.append({
+                    "test_case_id": case.get("id", f"case_{i}"),
+                    "harness_target": "sample_essay",
+                    "input_source": case.get("source", "local_test_case_bank"),
+                    "user_input": case.get("question", ""),
+                    "question": case.get("question", ""),
+                    "retrieval_query": "",
+                    "recalled_chunks": [],
+                    "final_prompt": "",
+                    "prompt_calls": [],
+                    "output": "",
+                    "model_output": "",
+                    "scores": MetricScores().to_dict(),
+                    "scoring_result": MetricScores().to_dict(),
+                    "error_labels": ["runtime_error"],
+                    "latency_seconds": 0,
+                    "token_usage": {},
+                    "model_versions": {},
                     "error": str(e),
                 })
 
@@ -254,8 +380,8 @@ class Evaluator:
     def _calculate_band_alignment(scores: Dict[str, float]) -> float:
         """Calculate how well the output aligns with Band 7 standards.
 
-        Band alignment measures how close all scores are to Band 7,
-        with penalties for being significantly below.
+        Band alignment is a diagnostic proxy for readiness against the target
+        band. It is based only on official IELTS criterion scores.
 
         Args:
             scores: Dict of metric_name -> score.
@@ -266,16 +392,40 @@ class Evaluator:
         if not scores:
             return 0.0
 
-        target = 7.0
-        deviations = [abs(s - target) for s in scores.values()]
-        avg_deviation = sum(deviations) / len(deviations)
+        avg_score = sum(scores.values()) / len(scores)
+        return max(1.0, min(9.0, round(avg_score * 2) / 2))
 
-        # Lower deviation = higher alignment
-        alignment = target - avg_deviation
-        return max(1.0, min(9.0, alignment + 2))  # +2 to bring it into reasonable range
+    @staticmethod
+    def _label_errors(scores: Dict[str, object], trace: Dict[str, object]) -> List[str]:
+        """Attach coarse failure labels for product-quality diagnosis."""
+        labels = []
+        if scores.get("task_response", 0) < 6.0:
+            labels.append("weak_task_response")
+        if scores.get("coherence_cohesion", 0) < 6.0:
+            labels.append("weak_coherence")
+        if scores.get("lexical_resource", 0) < 6.0:
+            labels.append("weak_lexical_resource")
+        if scores.get("grammatical_range", 0) < 6.0:
+            labels.append("weak_grammar_range")
+        if scores.get("specificity_score", 0) < 6.0:
+            labels.append("generic_or_underdeveloped")
+        if not trace.get("recalled_chunks"):
+            labels.append("no_rag_chunks")
+        return labels or ["no_major_error"]
+
+    @staticmethod
+    def _label_rule_errors(rule_result: Dict[str, object]) -> List[str]:
+        """Translate failed deterministic checks into readable labels."""
+        checks = rule_result.get("checks", {})
+        labels = [
+            f"missing_{name[4:]}" if name.startswith("has_") else f"failed_{name}"
+            for name, passed in checks.items()
+            if not passed
+        ]
+        return labels or ["no_major_error"]
 
 
-def _build_pipeline(provider: str = None, judge_provider: str = None):
+def _build_generation_pipeline(provider: str = None):
     from ..agent.state import Scenario, WorkflowState
     from ..agent.workflow import AgentWorkflow
     from ..llm.factory import LLMFactory
@@ -287,9 +437,7 @@ def _build_pipeline(provider: str = None, judge_provider: str = None):
 
     config = Config()
     provider_name = provider or config.default_provider
-    judge_provider_name = judge_provider or config.get("harness.judge_model", "openai")
     llm = LLMFactory.create(provider_name, config)
-    judge_llm = LLMFactory.create(judge_provider_name, config)
 
     retriever = None
     try:
@@ -302,48 +450,118 @@ def _build_pipeline(provider: str = None, judge_provider: str = None):
     workflow = AgentWorkflow(llm=llm, retriever=retriever, prompt_manager=PromptManager())
 
     def pipeline(question: str) -> str:
+        if hasattr(llm, "reset_usage"):
+            llm.reset_usage()
         state = WorkflowState(user_input=question, scenario=Scenario.GENERATE)
         state = workflow.run(state)
-        parts = []
-        if state.analysis:
-            parts.append(f"Question Type: {state.analysis.question_type_en}")
-            parts.append(f"Core Issue: {state.analysis.controversy}")
-        if state.arguments:
-            parts.append(state.arguments[0].main_idea_en)
-        if state.outline and state.outline.tips:
-            parts.append("Suggested Outline:\n" + state.outline.tips[0])
-        return "\n\n".join(parts)
+        raw_sample_essay = ""
+        output = ""
+        if not state.has_errors():
+            raw_sample_essay = workflow.generate_sample_essay(state)
+            output = _extract_essay_body(raw_sample_essay)
+        pipeline.last_trace = {
+            "user_input": state.user_input,
+            "harness_target": "sample_essay",
+            "retrieval_query": state.trace.get("retrieval_query", ""),
+            "recalled_chunks": _summarize_recalled_chunks(state.rag_raw_results),
+            "final_prompt": state.trace.get("final_prompt", ""),
+            "prompt_calls": state.trace.get("prompt_calls", []),
+            "raw_sample_essay": raw_sample_essay,
+            "model_name": llm.model_name,
+            "token_usage": getattr(llm, "usage_total", {}),
+            "workflow_errors": state.errors,
+        }
+        return output
 
+    pipeline.last_trace = {}
+
+    return pipeline
+
+
+def _extract_essay_body(sample_essay_output: str) -> str:
+    """Keep only the English essay body before study notes."""
+    if "---" in sample_essay_output:
+        return sample_essay_output.split("---", 1)[0].strip()
+    return sample_essay_output.strip()
+
+
+def _summarize_recalled_chunks(raw_results: Dict[str, List[Dict]], max_chars: int = 260) -> List[Dict]:
+    chunks = []
+    for collection_name, items in raw_results.items():
+        for index, item in enumerate(items):
+            content = item.get("content", "")
+            chunks.append({
+                "collection": collection_name,
+                "rank": index + 1,
+                "distance": item.get("distance", 0.0),
+                "metadata": item.get("metadata", {}),
+                "content_preview": content[:max_chars],
+            })
+    return chunks
+
+
+def _build_pipeline(provider: str = None, judge_provider: str = None):
+    from ..llm.factory import LLMFactory
+    from ..utils.config import Config
+
+    config = Config()
+    judge_provider_name = judge_provider or config.get("harness.judge_model", "openai")
+    judge_llm = LLMFactory.create(judge_provider_name, config)
+    pipeline = _build_generation_pipeline(provider)
     return judge_llm, pipeline
 
 
 def main():
     """CLI for internal quality checks."""
     import argparse
+    import random
 
     from .reporter import Reporter
     from .test_cases import TestCaseManager
 
     parser = argparse.ArgumentParser(description="Run IELTS agent quality harness.")
+    parser.add_argument("--question", default=None, help="Evaluate one explicit IELTS Task 2 question.")
     parser.add_argument("--test-count", type=int, default=3)
     parser.add_argument("--topic", default=None)
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for local test case sampling.")
     parser.add_argument("--provider", default=None, choices=["openai", "deepseek"])
     parser.add_argument("--judge-provider", default=None, choices=["openai", "deepseek"])
     parser.add_argument("--rules-only", action="store_true")
+    parser.add_argument("--json-output", default=None, help="Optional path for full trace JSON export.")
+    parser.add_argument("--csv-output", default=None, help="Optional path for summary CSV export.")
     args = parser.parse_args()
 
-    test_cases = TestCaseManager()
-    cases = test_cases.sample(args.test_count, args.topic)
+    if args.question:
+        cases = [{
+            "id": "manual_001",
+            "question": args.question,
+            "source": "manual_cli",
+        }]
+    else:
+        random.seed(args.seed)
+        test_cases = TestCaseManager()
+        cases = test_cases.sample(args.test_count, args.topic)
+        for case in cases:
+            case.setdefault("source", "local_test_case_bank")
 
     if args.rules_only:
-        for case in cases:
-            print(f"{case.get('id')}: rules-only requires a generated output; use full mode for pipeline output.")
+        pipeline = _build_generation_pipeline(args.provider)
+        results = Evaluator.batch_rule_evaluate(cases, pipeline)
+        print(Reporter.terminal_summary(results))
+        if args.json_output:
+            Reporter.to_json(results, args.json_output)
+        if args.csv_output:
+            Reporter.to_csv(results, args.csv_output)
         return
 
     judge, pipeline = _build_pipeline(args.provider, args.judge_provider)
     evaluator = Evaluator(judge)
     results = evaluator.batch_evaluate(cases, pipeline)
     print(Reporter.terminal_summary(results))
+    if args.json_output:
+        Reporter.to_json(results, args.json_output)
+    if args.csv_output:
+        Reporter.to_csv(results, args.csv_output)
 
 
 if __name__ == "__main__":

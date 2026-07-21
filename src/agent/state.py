@@ -127,6 +127,7 @@ class WorkflowState:
     model_used: str = ""
     prompt_version: str = "v1"
     errors: List[str] = field(default_factory=list)
+    trace: Dict[str, Any] = field(default_factory=dict)
 
     def add_error(self, error: str):
         """Record an error that occurred during processing."""

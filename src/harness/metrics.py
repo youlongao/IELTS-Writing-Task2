@@ -41,6 +41,13 @@ class MetricsCalculator:
     Uses a combination of structural checks and LLM-as-judge evaluation.
     """
 
+    IELTS_CRITERIA = [
+        "task_response",
+        "coherence_cohesion",
+        "lexical_resource",
+        "grammatical_range",
+    ]
+
     # IELTS Band 7 descriptors for each criterion
     BAND_7_DESCRIPTORS = {
         "task_response": """
@@ -85,7 +92,7 @@ class MetricsCalculator:
         """
         descriptor = cls.BAND_7_DESCRIPTORS.get(metric, "")
 
-        return f"""## IELTS Writing Task 2 — Quality Evaluation
+        return f"""## IELTS Writing Task 2 - Quality Evaluation
 
 You are an experienced IELTS examiner. Evaluate the following AI-generated content
 for the specific criterion below. Score on a 1-9 band scale.
@@ -116,7 +123,9 @@ Justification: [Your brief justification]
     def calculate_overall(cls, scores: Dict[str, float]) -> float:
         """Calculate overall band score from individual metrics.
 
-        Uses IELTS-style averaging (rounded to nearest 0.5).
+        Uses IELTS-style averaging across the four official criteria only
+        (rounded to nearest 0.5). Diagnostic metrics such as specificity or
+        band_alignment should not inflate or depress the estimated band.
 
         Args:
             scores: Dict of metric_name -> score.
@@ -124,9 +133,15 @@ Justification: [Your brief justification]
         Returns:
             Overall band score.
         """
-        if not scores:
+        official_scores = [
+            scores[metric]
+            for metric in cls.IELTS_CRITERIA
+            if metric in scores
+        ]
+
+        if not official_scores:
             return 0.0
 
-        avg = sum(scores.values()) / len(scores)
+        avg = sum(official_scores) / len(official_scores)
         # Round to nearest 0.5
         return round(avg * 2) / 2

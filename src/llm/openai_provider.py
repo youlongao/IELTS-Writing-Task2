@@ -78,6 +78,14 @@ class OpenAIProvider(LLMProvider):
         for attempt in range(3):
             try:
                 response = self.client.chat.completions.create(**params)
+                usage = None
+                if getattr(response, "usage", None):
+                    usage = {
+                        "prompt_tokens": getattr(response.usage, "prompt_tokens", 0),
+                        "completion_tokens": getattr(response.usage, "completion_tokens", 0),
+                        "total_tokens": getattr(response.usage, "total_tokens", 0),
+                    }
+                self.record_usage(usage)
                 content = response.choices[0].message.content
 
                 if content:

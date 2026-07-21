@@ -37,6 +37,7 @@ data/user_history.json
 eval_results/*.json
 eval_results/*.csv
 !eval_results/.gitkeep
+runs/
 
 # Logs
 *.log

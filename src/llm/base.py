@@ -21,6 +21,39 @@ class LLMProvider(ABC):
         self.model_name = model_name
         self.temperature = temperature
         self.max_tokens = max_tokens
+        self.last_usage: Dict[str, int] = {}
+        self.usage_total: Dict[str, int] = {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0,
+        }
+        self.call_count = 0
+
+    def reset_usage(self):
+        """Reset accumulated token usage before a harness run."""
+        self.last_usage = {}
+        self.usage_total = {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0,
+        }
+        self.call_count = 0
+
+    def record_usage(self, usage: Optional[Dict[str, int]]):
+        """Record provider token usage when the API exposes it."""
+        self.call_count += 1
+        if not usage:
+            self.last_usage = {}
+            return
+
+        normalized = {
+            "prompt_tokens": int(usage.get("prompt_tokens", 0) or 0),
+            "completion_tokens": int(usage.get("completion_tokens", 0) or 0),
+            "total_tokens": int(usage.get("total_tokens", 0) or 0),
+        }
+        self.last_usage = normalized
+        for key, value in normalized.items():
+            self.usage_total[key] = self.usage_total.get(key, 0) + value
 
     @abstractmethod
     def generate(self, prompt: str, **kwargs) -> str:

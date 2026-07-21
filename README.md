@@ -148,6 +148,58 @@ Useful verification commands:
 .\.venv\Scripts\python.exe -m src.harness.evaluator --provider openai --judge-provider openai --topic education --test-count 2
 ```
 
+Run a fixed-judge provider comparison and save it for the observability panel:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.harness.compare --provider-a deepseek --provider-b openai --judge-provider deepseek --test-count 5 --seed 42 --json-output runs\compare_sample_essay.json
+```
+
+Open the Harness observability panel:
+
+```powershell
+.\.venv\Scripts\streamlit.exe run src\harness_dashboard.py --server.port 8502
+```
+
+The panel reads `runs/*.json` and tracks timeline trends for overall band,
+IELTS criterion scores, error labels, latency, token usage, provider, judge,
+and case-level details.
+
+## MCP Server
+
+The project also exposes its main interfaces through a lightweight MCP server.
+It uses JSON-RPC over stdio and does not require an additional MCP SDK.
+
+Start the MCP server:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.mcp_server
+```
+
+Available MCP tools:
+
+- `ielts_generate`: generate question analysis, writable ideas, RAG context, and outline.
+- `ielts_deepen_idea`: expand a shallow learner idea into an argument chain.
+- `ielts_evaluate_outline`: evaluate an outline as an idea-and-structure plan.
+- `ielts_evaluate_essay`: evaluate a learner essay and return an actual IELTS band estimate.
+- `rag_retrieve_context`: retrieve relevant RAG context from the writing reference library.
+- `rag_build_knowledge_base`: rebuild the vector store from `data/knowledge_base`.
+- `rag_collection_counts`: inspect RAG collection counts.
+- `harness_rule_evaluate`: run deterministic rule checks without calling an LLM judge.
+
+Example MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "ielts-task2-agent": {
+      "command": "E:\\Ai PM\\IELTS Writing Task2\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "src.mcp_server"],
+      "cwd": "E:\\Ai PM\\IELTS Writing Task2"
+    }
+  }
+}
+```
+
 ## Setup
 
 Create and activate a virtual environment:
@@ -367,6 +419,41 @@ Harness 的流程：
 
 - `--provider` 是被测试的模型
 - `--judge-provider` 是负责评分的裁判模型
+
+## MCP 服务封装
+
+项目已经把主要接口封装成 MCP tools，可以被支持 MCP 的客户端通过 stdio 调用。这个封装不额外依赖 MCP Python SDK。
+
+启动 MCP server：
+
+```powershell
+.\.venv\Scripts\python.exe -m src.mcp_server
+```
+
+当前 MCP tools：
+
+- `ielts_generate`：生成题目拆解、可写观点、RAG context 和建议大纲。
+- `ielts_deepen_idea`：把学生的浅层观点扩展成论证链。
+- `ielts_evaluate_outline`：评价学生 outline 的思路和结构质量。
+- `ielts_evaluate_essay`：评价学生作文，并返回实际 IELTS Band 估分。
+- `rag_retrieve_context`：从写作资料库中检索相关 RAG 内容。
+- `rag_build_knowledge_base`：根据 `data/knowledge_base` 重建向量库。
+- `rag_collection_counts`：查看各 RAG collection 的文档数量。
+- `harness_rule_evaluate`：运行不调用 LLM 的规则检查。
+
+MCP 客户端配置示例：
+
+```json
+{
+  "mcpServers": {
+    "ielts-task2-agent": {
+      "command": "E:\\Ai PM\\IELTS Writing Task2\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "src.mcp_server"],
+      "cwd": "E:\\Ai PM\\IELTS Writing Task2"
+    }
+  }
+}
+```
 
 ## 本地运行
 
